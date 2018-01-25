@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated on 2017-11-09 21:34:06.507542 by $Id: route2trips.py 26301 2017-10-02 20:48:38Z behrisch $ via randomTrips.py
+  options: 
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bus" vClass="bus">
+    </vType>
+    <trip id="bus0" depart="0.00" departLane="best" from="374366365#0" to="-33708057#1" type="bus"/>
+    <trip id="bus1" depart="409.27" departLane="best" from="374366365#0" to="-138139938#0" type="bus"/>
+    <trip id="bus2" depart="818.55" departLane="best" from="374366365#0" to="35202667#2" type="bus"/>
+    <trip id="bus3" depart="1227.82" departLane="best" from="-35202667#2" to="-33708057#2" type="bus"/>
+    <trip id="bus4" depart="1637.10" departLane="best" from="374366365#4" to="-374366365#2" type="bus"/>
+    <trip id="bus5" depart="2046.37" departLane="best" from="374366365#0" to="33708057#3" type="bus"/>
+    <trip id="bus6" depart="2455.64" departLane="best" from="374366365#0" to="35202667#2" type="bus"/>
+    <trip id="bus7" depart="2864.92" departLane="best" from="374366365#0" to="35202667#0" type="bus"/>
+    <trip id="bus8" depart="3274.19" departLane="best" from="374366365#0" to="33708057#2" type="bus"/>
+</routes>

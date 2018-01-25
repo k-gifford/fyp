@@ -1,0 +1,2 @@
+python "/home/kealan/sumo-svn/tools/randomTrips.py" -n osm.net.xml --seed 42 --fringe-factor 5 -p 102.318538 -r osm.passenger.rou.xml -o osm.passenger.trips.xml -e 3600 --vehicle-class passenger --vclass passenger --prefix veh --min-distance 300 --trip-attributes 'speedDev="0.1" departLane="best"' --validate
+python "/home/kealan/sumo-svn/tools/randomTrips.py" -n osm.net.xml --seed 42 --fringe-factor 5 -p 409.274152 -r osm.bus.rou.xml -o osm.bus.trips.xml -e 3600 --vehicle-class bus --vclass bus --prefix bus --min-distance 600 --trip-attributes 'departLane="best"' --validate

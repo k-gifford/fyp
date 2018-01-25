@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu Nov  9 21:34:06 2017 by SUMO duarouter Version 0.30.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="osm.net.xml"/>
+        <route-files value="osm.bus.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="osm.bus.rou.xml"/>
+    </output>
+
+    <processing>
+        <ignore-errors value="true"/>
+    </processing>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bus" vClass="bus"/>
+    <vehicle id="bus0" type="bus" depart="0.00" departLane="best">
+        <route edges="374366365#0 374366365#3 374366365#4 -33708057#3 -33708057#2 -33708057#1"/>
+    </vehicle>
+    <vehicle id="bus1" type="bus" depart="409.27" departLane="best">
+        <route edges="374366365#0 374366365#3 374366365#4 414126489 -138139938#0"/>
+    </vehicle>
+    <vehicle id="bus2" type="bus" depart="818.55" departLane="best">
+        <route edges="374366365#0 374366365#3 374366365#4 35202667#0 35202667#1 35202667#2"/>
+    </vehicle>
+    <vehicle id="bus3" type="bus" depart="1227.82" departLane="best">
+        <route edges="-35202667#2 -35202667#1 -35202667#0 -33708057#3 -33708057#2"/>
+    </vehicle>
+    <vehicle id="bus4" type="bus" depart="1637.10" departLane="best">
+        <route edges="374366365#4 -374366365#4 -374366365#3 -374366365#2"/>
+    </vehicle>
+    <vehicle id="bus5" type="bus" depart="2046.37" departLane="best">
+        <route edges="374366365#0 374366365#3 374366365#4 -33708057#3 33708057#3"/>
+    </vehicle>
+    <vehicle id="bus6" type="bus" depart="2455.64" departLane="best">
+        <route edges="374366365#0 374366365#3 374366365#4 35202667#0 35202667#1 35202667#2"/>
+    </vehicle>
+    <vehicle id="bus7" type="bus" depart="2864.92" departLane="best">
+        <route edges="374366365#0 374366365#3 374366365#4 35202667#0"/>
+    </vehicle>
+    <vehicle id="bus8" type="bus" depart="3274.19" departLane="best">
+        <route edges="374366365#0 374366365#3 374366365#4 -33708057#3 -33708057#2 33708057#2"/>
+    </vehicle>
+</routes>
