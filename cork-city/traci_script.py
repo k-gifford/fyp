@@ -28,29 +28,31 @@ def run():
     step = 0
 
     #get initial traffic light state for traffic intersection 354512
-    tl_state = traci.trafficlight.getRedYellowGreenState("354512")
-    tl_program = traci.trafficlight.getProgram("354512")
+    tl_state = traci.trafficlight.getRedYellowGreenState("354504")
+    tl_program = traci.trafficlight.getProgram("354504")
 
+
+    # Running the simulation for 1000 steps
     while step < 1000:
 
         # stake one step in the simulation
         traci.simulationStep()
 
         # if the traffic light has changed since the last step then update
-        if tl_state != traci.trafficlight.getRedYellowGreenState("354512"):
+        if tl_state != traci.trafficlight.getRedYellowGreenState("354504"):
 
-            tl_state = traci.trafficlight.getRedYellowGreenState("354512")
+            tl_state = traci.trafficlight.getRedYellowGreenState("354504")
             # writer.writerows(tl_state)
             # print(tl_state)
             # print(traci.trafficlight.getCompleteRedYellowGreenDefinition("354512"))
-            program = traci.trafficlight.getProgram("354512")
+            program = traci.trafficlight.getProgram("354504")
             # print(traci.trafficlight.getProgram("354512"))
             # print(traci.trafficlight.getPhase("354512"))
 
             if program == 'allred':
-                traci.trafficlight.setProgram("354512", "0")
+                traci.trafficlight.setProgram("354504", "0")
             else:
-                traci.trafficlight.setProgram("354512", "allred")
+                traci.trafficlight.setProgram("354504", "0")
         else:
             pass
 

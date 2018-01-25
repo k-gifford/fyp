@@ -1,4 +1,4 @@
 <!-- Retrieve traffic light states and output to file -->
 <additional>
-    <timedEvent type="SaveTLSStates" source="354512" dest="tl_states.xml"/>
+    <timedEvent type="SaveTLSStates" source="354504" dest="tl_states.xml"/>
 </additional>
