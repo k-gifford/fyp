@@ -1,6 +1,8 @@
+
+
 # using a TraCi script to extract information about traffic light states
 import os, sys
-# import csv
+
 
 def check_env():
     # check if the SUMO_HOME environment vairable is set
@@ -10,24 +12,25 @@ def check_env():
     else:
         sys.exit("please declare environment variable 'SUMO_HOME'")
 
+def sumo_cmd():
+
+    # store location of sumo-gui to launch with the gui
+    sumo_binary = "/usr/bin/sumo-gui"
+    sumo_cmd = [sumo_binary, "-c", "osm.sumocfg"]
+    return sumo_cmd
 
 
 def run():
-    check_env()
-    # store location of sumo-gui (if you want to launch with the gui)
-    sumoBinary = "/usr/bin/sumo-gui"
-    sumoCmd = [sumoBinary, "-c", "osm.sumocfg"]
-    import traci
+
+    check_env()  # check SUMO_HOME environment variable is set
+    import traci  # import the traci library
 
     # start simulation, connecting to it using this script
-    # prepare csv file to be written to
-    # trafficLightData = open('trafficLightData.csv', 'w')
-    # writer = csv.writer(trafficLightData)
-
-    traci.start(sumoCmd)
+    s_cmd = sumo_cmd()
+    traci.start(s_cmd)
     step = 0
 
-    #get initial traffic light state for traffic intersection 354512
+    # get initial traffic light state for traffic intersection 354512
     tl_state = traci.trafficlight.getRedYellowGreenState("354504")
     tl_program = traci.trafficlight.getProgram("354504")
 
@@ -41,10 +44,9 @@ def run():
         # if the traffic light has changed since the last step then update
         if tl_state != traci.trafficlight.getRedYellowGreenState("354504"):
 
+            # retrieve the current traffic light state of junction
             tl_state = traci.trafficlight.getRedYellowGreenState("354504")
-            # writer.writerows(tl_state)
-            # print(tl_state)
-            # print(traci.trafficlight.getCompleteRedYellowGreenDefinition("354512"))
+
             program = traci.trafficlight.getProgram("354504")
             # print(traci.trafficlight.getProgram("354512"))
             # print(traci.trafficlight.getPhase("354512"))
@@ -60,7 +62,6 @@ def run():
         step += 1
 
     # when finished all steps, close traci
-
     traci.close()
 
 def main():
