@@ -8,7 +8,7 @@
     </input>
 
     <output>
-        <output-file value="/home/kealan/College/fyp/mapdata/2017-11-02-19-15-53/osm.net.xml"/>
+        <output-file value="/home/kealan/College/fyp/mapdata/cork-city/osm.net.xml"/>
         <output.street-names value="true"/>
         <output.original-names value="true"/>
         <ptstop-output value="osm_stops.add.xml"/>
@@ -36,5 +36,8 @@
     <report>
         <verbose value="true"/>
     </report>
+
+
+
 
 </configuration>

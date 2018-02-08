@@ -10,7 +10,7 @@
     </input>
 
     <output>
-        <output-file value="/home/kealan/College/fyp/mapdata/2017-11-02-19-15-53/osm.poly.xml"/>
+        <output-file value="/home/kealan/College/fyp/mapdata/cork-city/osm.poly.xml"/>
     </output>
 
     <report>
