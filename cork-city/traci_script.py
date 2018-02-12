@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 
 # using a TraCi script to extract information about traffic light states
 import os, sys
