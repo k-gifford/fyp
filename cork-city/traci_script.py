@@ -41,6 +41,7 @@ def run():
         # stake one step in the simulation
         traci.simulationStep()
 
+        """
         # if the traffic light has changed since the last step then update
         if tl_state != traci.trafficlight.getRedYellowGreenState("354504"):
 
@@ -57,6 +58,9 @@ def run():
                 traci.trafficlight.setProgram("354504", "0")
         else:
             pass
+        """
+
+        
 
         # increment the simulation by 1 step
         step += 1
