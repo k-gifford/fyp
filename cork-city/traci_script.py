@@ -3,17 +3,16 @@
 # using a TraCi script to extract information about traffic light states
 import os, sys
 
-
+# checks if the SUMO_HOME environment vairable is set
 def check_env():
-    # check if the SUMO_HOME environment vairable is set
     if 'SUMO_HOME' in os.environ:
         tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
         sys.path.append(tools)
     else:
         sys.exit("please declare environment variable 'SUMO_HOME'")
 
+# returns the sumo command to launch sumo
 def sumo_cmd():
-
     # store location of sumo-gui to launch with the gui
     sumo_binary = "/usr/bin/sumo-gui"
     sumo_cmd = [sumo_binary, "-c", "osm.sumocfg"]
@@ -59,8 +58,10 @@ def run():
         else:
             pass
         """
-
         
+        print(traci.inductionloop.getTimeSinceDetection("e1Detector_-138139938#0_0_0"))
+
+
 
         # increment the simulation by 1 step
         step += 1
