@@ -2,6 +2,10 @@
 
 # using a TraCi script to extract information about traffic light states
 import os, sys
+import plotly.plotly as py
+import plotly.graph_objs as go
+import numpy as np
+
 
 # checks if the SUMO_HOME environment vairable is set
 def check_env():
@@ -33,38 +37,51 @@ def run():
     #tl_state = traci.trafficlight.getRedYellowGreenState("354504")
     #tl_program = traci.trafficlight.getProgram("354504")
 
+    cfp_1 = [0]
+    cfp_2 = [0]
+    cfp_3 = [0]
+    cfp_4 = [0]
+    cfp_5 = [0]
+    cfps = [cfp_1, cfp_2, cfp_3, cfp_4, cfp_5]
+    cfp_pointer = 0
 
     # Running the simulation for 1000 steps
-    while step < 1000:
+    while step < 92:
 
         # stake one step in the simulation
         traci.simulationStep()
 
         """
-        # if the traffic light has changed since the last step then update
-        if tl_state != traci.trafficlight.getRedYellowGreenState("354504"):
-
-            # retrieve the current traffic light state of junction
-            tl_state = traci.trafficlight.getRedYellowGreenState("354504")
-
-            program = traci.trafficlight.getProgram("354504")
-            # print(traci.trafficlight.getProgram("354512"))
-            # print(traci.trafficlight.getPhase("354512"))
-
-            if program == 'allred':
-                traci.trafficlight.setProgram("354504", "0")
-            else:
-                traci.trafficlight.setProgram("354504", "0")
-        else:
-            pass
+        start accumulating counts of vehicles flowing over this e1Detector
         """
+        cfp_1[cfp_pointer] = cfp_1[cfp_pointer] + traci.inductionloop.getLastStepVehicleNumber("e1Detector_73552050#2_0_79")
+        cfp_2[cfp_pointer] = cfp_2[cfp_pointer] + traci.inductionloop.getLastStepVehicleNumber("e1Detector_73552050#2_1_80")
+        cfp_3[cfp_pointer] = cfp_3[cfp_pointer] + traci.inductionloop.getLastStepVehicleNumber("e1det_61188951_0")
+        cfp_4[cfp_pointer] = cfp_4[cfp_pointer] + traci.inductionloop.getLastStepVehicleNumber("e1det_61188951_1")
+        cfp_5[cfp_pointer] = cfp_5[cfp_pointer] + traci.inductionloop.getLastStepVehicleNumber("e1det_-40950946#0_0")
 
-        #print(traci.inductionloop.getTimeSinceDetection("e1Detector_-138139938#0_0_0"))
 
+        # print(traci.inductionloop.getLastStepVehicleNumber("e1Detector_73552050#2_0_79"))
 
+        if step % 4 is 0:
+            # next position in the cfp
+            cfp_pointer += 1
+            for c in cfps:
+                c.append(0)
 
         # increment the simulation by 1 step
         step += 1
+    # END WHILE
+    """
+    trace = go.Bar(
+    x = list(range(int(step/4))),
+    y = cfp_e1
+    )
+    data = [trace]
+    py.iplot(data)
+    """
+
+
 
     # when finished all steps, close traci
     traci.close()
