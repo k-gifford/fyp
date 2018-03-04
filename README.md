@@ -5,3 +5,7 @@ Making use of Simulation of Urban Mobility (SUMO) to simulate traffic flow scena
 Implementing the control using Python. 
 
 The aim is to improve vehicle throughput in junctions and to reduce overall waiting times for vehicles at junctions.
+
+# Currently
+
+Implementing SCOOT in the city-centre scenario
