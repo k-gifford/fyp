@@ -1,444 +1,69 @@
-<additional>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-107185799#0_0" lane="-107185799#0_0" length="1" pos="30.209999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-107185799#0_1" lane="-107185799#0_1" length="1" pos="30.209999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_114395954_0" lane="114395954_0" length="1" pos="32.44"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_114395954_1" lane="114395954_1" length="1" pos="32.44"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_279050195_0" lane="279050195_0" length="1" pos="157.94"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_279050195_1" lane="279050195_1" length="1" pos="157.94"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_279050195_2" lane="279050195_2" length="1" pos="157.94"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-109021467#0_0" lane="-109021467#0_0" length="1" pos="21.15"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-109021467#0_1" lane="-109021467#0_1" length="1" pos="21.15"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_178631602#2_0" lane="178631602#2_0" length="1" pos="60.089999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_178631602#2_1" lane="178631602#2_1" length="1" pos="60.089999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_224781979#3_0" lane="224781979#3_0" length="1" pos="134.76000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_98387831#3_0" lane="98387831#3_0" length="1" pos="50.12"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-118614115_0" lane="-118614115_0" length="1" pos="0.85"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-51012854#0_0" lane="-51012854#0_0" length="1" pos="62.93"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_118614115_0" lane="118614115_0" length="1" pos="0.85"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138017447#1_0" lane="138017447#1_0" length="1" pos="208.94"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138017447#1_1" lane="138017447#1_1" length="1" pos="208.94"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22634728#2_0" lane="22634728#2_0" length="1" pos="50.04"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22634728#2_1" lane="22634728#2_1" length="1" pos="50.04"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_75589366#23_0" lane="75589366#23_0" length="1" pos="37.54"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-129111452#0_0" lane="-129111452#0_0" length="1" pos="89.77000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-29312521#0_0" lane="-29312521#0_0" length="1" pos="12.01"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-31346243_0" lane="-31346243_0" length="0.30000000000000004" pos="0"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-31346243_1" lane="-31346243_1" length="0.30000000000000004" pos="0"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14890414#1_0" lane="14890414#1_0" length="1" pos="24.209999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14890414#1_1" lane="14890414#1_1" length="1" pos="24.209999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14890414#1_2" lane="14890414#1_2" length="1" pos="24.209999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29312521#0_0" lane="29312521#0_0" length="1" pos="12.07"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_426438140#3_0" lane="426438140#3_0" length="1" pos="47.449999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_426438140#3_1" lane="426438140#3_1" length="1" pos="47.449999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_80511350_0" lane="80511350_0" length="1" pos="96.25"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-129451613_0" lane="-129451613_0" length="1" pos="53.199999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-14890634#2_0" lane="-14890634#2_0" length="1" pos="97.38000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_1219403#0_0" lane="1219403#0_0" length="1" pos="83.09"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14890634#1_0" lane="14890634#1_0" length="1" pos="50.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14890634#1_1" lane="14890634#1_1" length="1" pos="50.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-129462269#0_0" lane="-129462269#0_0" length="1" pos="39.08"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-13989039#0_0" lane="-13989039#0_0" length="1" pos="128.15"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_204876015_0" lane="204876015_0" length="1" pos="35.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-129518914_0" lane="-129518914_0" length="1" pos="21.27"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-224709345#0_0" lane="-224709345#0_0" length="1" pos="78.24000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-224709345#0_1" lane="-224709345#0_1" length="1" pos="78.24000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_31404826#1_0" lane="31404826#1_0" length="1" pos="54.47"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_31404826#1_1" lane="31404826#1_1" length="1" pos="54.47"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-135340274#0_0" lane="-135340274#0_0" length="1" pos="30.7"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135340275#0_0" lane="135340275#0_0" length="1" pos="92.83000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135340275#0_1" lane="135340275#0_1" length="1" pos="92.83000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_137229994#1_0" lane="137229994#1_0" length="1" pos="42.33"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_137229994#1_1" lane="137229994#1_1" length="1" pos="42.33"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-135350072#1_0" lane="-135350072#1_0" length="0.1" pos="0"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135350072#0_0" lane="135350072#0_0" length="1" pos="18.709999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135350072#1_0" lane="135350072#1_0" length="0.1" pos="0"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_337080198#0_0" lane="337080198#0_0" length="1" pos="77.52000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_337080198#0_1" lane="337080198#0_1" length="1" pos="77.52000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_426438140#1_0" lane="426438140#1_0" length="1" pos="7.130000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_426438140#1_1" lane="426438140#1_1" length="1" pos="7.130000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_60889236_0" lane="60889236_0" length="1" pos="54.96"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-137231946#0_0" lane="-137231946#0_0" length="1" pos="132.84"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-137231946#0_1" lane="-137231946#0_1" length="1" pos="132.84"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-137231947#0_0" lane="-137231947#0_0" length="1" pos="132.58"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-137231947#0_1" lane="-137231947#0_1" length="1" pos="132.58"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29301230#5_0" lane="29301230#5_0" length="1" pos="126.63000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29301230#5_1" lane="29301230#5_1" length="1" pos="126.63000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_37812769#1_0" lane="37812769#1_0" length="1" pos="40.99"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-137231956#0_0" lane="-137231956#0_0" length="1" pos="81.05000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-338707030#0_0" lane="-338707030#0_0" length="1" pos="55.809999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_477791944#2_0" lane="477791944#2_0" length="1" pos="121.18"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_5312400#3_0" lane="5312400#3_0" length="1" pos="142.86"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138016950#1_0" lane="-138016950#1_0" length="1" pos="50.559999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138016963#2_0" lane="138016963#2_0" length="1" pos="100.34"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_17504008#4_0" lane="17504008#4_0" length="1" pos="76.44000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_366791128#5_0" lane="366791128#5_0" length="1" pos="15.12"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138016953#0_0" lane="-138016953#0_0" length="1" pos="208.54"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-366528055#6_0" lane="-366528055#6_0" length="1" pos="111.57000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-366528055#6_1" lane="-366528055#6_1" length="1" pos="111.57000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_13988695_0" lane="13988695_0" length="1" pos="104.04"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_366528055#5_0" lane="366528055#5_0" length="1" pos="26.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_366528055#5_1" lane="366528055#5_1" length="1" pos="26.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138016956#0_0" lane="-138016956#0_0" length="1" pos="9.15"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-203756780#0_0" lane="-203756780#0_0" length="1" pos="7.890000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_13990182#3_0" lane="13990182#3_0" length="1" pos="92.65"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_13990182#3_1" lane="13990182#3_1" length="1" pos="92.65"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_61188950#1_0" lane="61188950#1_0" length="1" pos="49.01"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138016956#6_0" lane="-138016956#6_0" length="1" pos="86.32000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138016956#4_0" lane="138016956#4_0" length="1" pos="41.35"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_85523619_0" lane="85523619_0" length="1" pos="87.37"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_85523623_0" lane="85523623_0" length="1" pos="181.1"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138017526#0_0" lane="-138017526#0_0" length="1" pos="52.769999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138016956#10_0" lane="138016956#10_0" length="1" pos="115.04"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_366448839#1_0" lane="366448839#1_0" length="1" pos="61.73"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_477791963_0" lane="477791963_0" length="1" pos="169.99"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138120046#0_0" lane="-138120046#0_0" length="1" pos="31.6"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138120046#0_1" lane="-138120046#0_1" length="1" pos="31.6"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-15133374_0" lane="-15133374_0" length="1" pos="0.32999999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-15133374_1" lane="-15133374_1" length="1" pos="0.32999999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_20647305#1_0" lane="20647305#1_0" length="1" pos="67.71000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_20647305#1_1" lane="20647305#1_1" length="1" pos="67.71000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_20647305#1_2" lane="20647305#1_2" length="1" pos="67.71000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138120048#2_0" lane="-138120048#2_0" length="1" pos="26.18"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138120048#2_1" lane="-138120048#2_1" length="1" pos="26.18"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138120048#0_0" lane="138120048#0_0" length="1" pos="2.2399999999999998"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138120048#0_1" lane="138120048#0_1" length="1" pos="2.2399999999999998"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_80511360#1_0" lane="80511360#1_0" length="1" pos="34.33"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138124572#1_0" lane="-138124572#1_0" length="1" pos="70.64"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138124572#1_1" lane="-138124572#1_1" length="1" pos="70.64"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138124572#0_0" lane="138124572#0_0" length="1" pos="9.96"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138124572#0_1" lane="138124572#0_1" length="1" pos="9.96"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138125464#1_0" lane="-138125464#1_0" length="1" pos="44.55"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_145681856#3_0" lane="145681856#3_0" length="1" pos="25.229999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_145681856#3_1" lane="145681856#3_1" length="1" pos="25.229999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138137060_0" lane="-138137060_0" length="1" pos="63.38"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22635046#1_0" lane="22635046#1_0" length="1" pos="42.17"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22635046#1_1" lane="22635046#1_1" length="1" pos="42.17"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138139801#0_0" lane="-138139801#0_0" length="1" pos="57.73"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-477791968#0_0" lane="-477791968#0_0" length="1" pos="27.209999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-5312403#0_0" lane="-5312403#0_0" length="1" pos="42.949999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_103361511#1_0" lane="103361511#1_0" length="1" pos="161.48000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138139801#9_0" lane="-138139801#9_0" length="1" pos="65.19000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-5312334#5_0" lane="-5312334#5_0" length="1" pos="57.05"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138139801#8_0" lane="138139801#8_0" length="1" pos="71.85000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_5312334#4_0" lane="5312334#4_0" length="1" pos="70.81"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-203756780#0_1" lane="-203756780#0_1" length="1" pos="7.890000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138139938#0_0" lane="-138139938#0_0" length="1" pos="119.25"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-35202667#0_0" lane="-35202667#0_0" length="1" pos="51.6"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-35202667#0_1" lane="-35202667#0_1" length="1" pos="51.6"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_33708057#7_0" lane="33708057#7_0" length="1" pos="56.19"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_33708057#7_1" lane="33708057#7_1" length="1" pos="56.19"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_374366365#9_0" lane="374366365#9_0" length="1" pos="103.02000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138141915#0_0" lane="-138141915#0_0" length="1" pos="24.91"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-477791909#0_0" lane="-477791909#0_0" length="1" pos="95.32000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-477791909#0_1" lane="-477791909#0_1" length="1" pos="95.32000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22635043#1_1" lane="22635043#1_1" length="1" pos="105.22"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138227397#0_0" lane="-138227397#0_0" length="1" pos="153.84"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-26584994_0" lane="-26584994_0" length="1" pos="307.65999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-26584994_1" lane="-26584994_1" length="1" pos="307.65999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138125681#2_0" lane="138125681#2_0" length="1" pos="23.77"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29313766_0" lane="29313766_0" length="1" pos="11.790000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22635043#1_0" lane="22635043#1_0" length="1" pos="105.22"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29313766_1" lane="29313766_1" length="1" pos="11.790000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138397654#13_0" lane="-138397654#13_0" length="1" pos="17.83"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138397654#11_0" lane="138397654#11_0" length="1" pos="32.36"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-138397654#9_0" lane="-138397654#9_0" length="1" pos="27.81"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138397654#8_0" lane="138397654#8_0" length="1" pos="13.27"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-13988575#0_0" lane="-13988575#0_0" length="1" pos="56.12"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-35202670#2_0" lane="-35202670#2_0" length="1" pos="62.05"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-35202670#2_1" lane="-35202670#2_1" length="1" pos="62.05"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_35202670#1_0" lane="35202670#1_0" length="1" pos="71.57000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_748206#1_0" lane="748206#1_0" length="1" pos="118.94000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_35202670#1_1" lane="35202670#1_1" length="1" pos="71.57000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_5364481_0" lane="5364481_0" length="1" pos="180.31"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-13988685_0" lane="-13988685_0" length="1" pos="185.20000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-368374360#0_0" lane="-368374360#0_0" length="1" pos="12.530000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22380251#2_0" lane="22380251#2_0" length="1" pos="83.63000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-13989743#0_0" lane="-13989743#0_0" length="1" pos="48.809999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-5312389#0_0" lane="-5312389#0_0" length="1" pos="33.3"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_203756780#3_0" lane="203756780#3_0" length="1" pos="40.58"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_203756780#3_1" lane="203756780#3_1" length="1" pos="40.58"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_85523624#4_0" lane="85523624#4_0" length="1" pos="27.84"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-146344008#0_0" lane="-146344008#0_0" length="1" pos="110.80000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_5364412#13_0" lane="5364412#13_0" length="1" pos="69.57000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-163732385#0_0" lane="-163732385#0_0" length="1" pos="73.60000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138138806#4_0" lane="138138806#4_0" length="1" pos="46.69"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_187804144#2_0" lane="187804144#2_0" length="1" pos="175.96"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_129451612_0" lane="129451612_0" length="1" pos="27.88"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_129451612_1" lane="129451612_1" length="1" pos="27.88"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_31330911_0" lane="31330911_0" length="1" pos="69.27000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_521674280_0" lane="521674280_0" length="1" pos="106.02000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-14890634#0_0" lane="-14890634#0_0" length="1" pos="46.37"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_521674280_1" lane="521674280_1" length="1" pos="106.02000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-165996563#3_0" lane="-165996563#3_0" length="1" pos="72.59"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-74585082#0_0" lane="-74585082#0_0" length="1" pos="54.699999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_165996563#2_0" lane="165996563#2_0" length="1" pos="112.17"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-165996565_0" lane="-165996565_0" length="1" pos="184.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-165996572#0_0" lane="-165996572#0_0" length="1" pos="92.68"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138139801#12_0" lane="138139801#12_0" length="1" pos="258.92999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_477791957#1_0" lane="477791957#1_0" length="1" pos="159.41"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-204614031_0" lane="-204614031_0" length="1" pos="29.06"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-204614031_1" lane="-204614031_1" length="1" pos="29.06"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-33708056#0_0" lane="-33708056#0_0" length="1" pos="96.01"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-33708056#0_1" lane="-33708056#0_1" length="1" pos="96.01"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_69600627#14_0" lane="69600627#14_0" length="1" pos="18.209999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_98727901_0" lane="98727901_0" length="1" pos="79.13000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-204876015_0" lane="-204876015_0" length="1" pos="33.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_13989057#3_0" lane="13989057#3_0" length="1" pos="46.61"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_5312390_0" lane="5312390_0" length="1" pos="76.72"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-20649992_0" lane="-20649992_0" length="0.1" pos="0"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-5312342_0" lane="-5312342_0" length="1" pos="54.36"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-5312342_1" lane="-5312342_1" length="1" pos="54.36"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_159762882_0" lane="159762882_0" length="1" pos="33.07"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_159762882_1" lane="159762882_1" length="1" pos="33.07"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_80511359#1_0" lane="80511359#1_0" length="1" pos="35.949999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-22635068#0_0" lane="-22635068#0_0" length="1" pos="48.629999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-22635068#0_1" lane="-22635068#0_1" length="1" pos="48.629999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_129518739#1_0" lane="129518739#1_0" length="1" pos="28.139999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_129518739#1_1" lane="129518739#1_1" length="1" pos="28.139999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14794461#2_0" lane="14794461#2_0" length="1" pos="29.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14794461#2_1" lane="14794461#2_1" length="1" pos="29.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_537238007#3_0" lane="537238007#3_0" length="1" pos="124.23"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-2390360_0" lane="-2390360_0" length="1" pos="49.46"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-2390360_1" lane="-2390360_1" length="1" pos="49.46"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-31406616#0_0" lane="-31406616#0_0" length="1" pos="39.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_26584994_0" lane="26584994_0" length="1" pos="306.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_26584994_1" lane="26584994_1" length="1" pos="306.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_477791928_0" lane="477791928_0" length="1" pos="5.25"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_477791928_1" lane="477791928_1" length="1" pos="5.25"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-29301230#0_0" lane="-29301230#0_0" length="1" pos="52.53"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-29301230#0_1" lane="-29301230#0_1" length="1" pos="52.53"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138125680_0" lane="138125680_0" length="1" pos="233.45000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_204575483#2_0" lane="204575483#2_0" length="1" pos="18.16"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_204575483#2_1" lane="204575483#2_1" length="1" pos="18.16"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_61808827#7_0" lane="61808827#7_0" length="1" pos="37.82"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-29660096#0_0" lane="-29660096#0_0" length="0.52" pos="0"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-477791976#0_0" lane="-477791976#0_0" length="1" pos="81.01"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_346637730#5_0" lane="346637730#5_0" length="1" pos="13.52"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_5312403#5_0" lane="5312403#5_0" length="1" pos="35.16"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-31404826#1_0" lane="-31404826#1_0" length="1" pos="54.48"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14890634#2_0" lane="14890634#2_0" length="1" pos="95.45"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14890634#2_1" lane="14890634#2_1" length="1" pos="95.45"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_93100419#10_0" lane="93100419#10_0" length="1" pos="65.65"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-317727542_0" lane="-317727542_0" length="1" pos="74.41000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_127658900_0" lane="127658900_0" length="0.24000000000000002" pos="0"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_127658900_1" lane="127658900_1" length="0.24000000000000002" pos="0"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_174674980#1_0" lane="174674980#1_0" length="1" pos="2.07"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_337008054#2_0" lane="337008054#2_0" length="1" pos="13.25"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-33696902#0_0" lane="-33696902#0_0" length="1" pos="90.74000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-374366365#2_0" lane="-374366365#2_0" length="1" pos="120.21000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_374366365#0_0" lane="374366365#0_0" length="1" pos="178.39000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-34817465#0_0" lane="-34817465#0_0" length="1" pos="29.82"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-477791953_0" lane="-477791953_0" length="1" pos="175.83"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_187804144#1_0" lane="187804144#1_0" length="1" pos="137.93"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-366788783_0" lane="-366788783_0" length="1" pos="103.60000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-366788789#0_0" lane="-366788789#0_0" length="1" pos="65.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_13988685_0" lane="13988685_0" length="1" pos="185.37"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_35202670#5_0" lane="35202670#5_0" length="1" pos="58.379999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_35202670#5_1" lane="35202670#5_1" length="1" pos="58.379999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-366791128#3_0" lane="-366791128#3_0" length="1" pos="50.03"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_366791128#2_0" lane="366791128#2_0" length="1" pos="16.36"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-368359400#2_0" lane="-368359400#2_0" length="1" pos="195.54"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-41741613#0_0" lane="-41741613#0_0" length="1" pos="233.70000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_31405719#1_0" lane="31405719#1_0" length="1" pos="73.30000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_368359400#0_0" lane="368359400#0_0" length="1" pos="168.58"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-39861491_0" lane="-39861491_0" length="1" pos="124.34"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22635070#3_0" lane="22635070#3_0" length="1" pos="66.56"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22635070#3_1" lane="22635070#3_1" length="1" pos="66.56"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-40950946#0_0" lane="-40950946#0_0" length="1" pos="33.33"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_61188951_0" lane="61188951_0" length="1" pos="110.72"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_61188951_1" lane="61188951_1" length="1" pos="110.72"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_73552050#4_0" lane="73552050#4_0" length="1" pos="5.95"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_73552050#4_1" lane="73552050#4_1" length="1" pos="5.95"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-41741604#0_0" lane="-41741604#0_0" length="1" pos="94.14"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-5364468#4_0" lane="-5364468#4_0" length="1" pos="185.28"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_5364468#3_0" lane="5364468#3_0" length="1" pos="76.88000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-477791957#0_0" lane="-477791957#0_0" length="1" pos="68.04"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-5312333#0_0" lane="-5312333#0_0" length="1" pos="38.73"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-5312334#0_0" lane="-5312334#0_0" length="1" pos="24.4"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_165996559#14_0" lane="165996559#14_0" length="1" pos="27.729999999999997"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-477791960#0_0" lane="-477791960#0_0" length="1" pos="14.360000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-477791960#0_1" lane="-477791960#0_1" length="1" pos="14.360000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-69329613#0_0" lane="-69329613#0_0" length="1" pos="116.98"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_203756782#9_0" lane="203756782#9_0" length="1" pos="11.75"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-366788789#0_1" lane="-366788789#0_1" length="1" pos="65.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_203756782#9_1" lane="203756782#9_1" length="1" pos="11.75"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-501600594#7_0" lane="-501600594#7_0" length="1" pos="20.84"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-5312400#0_0" lane="-5312400#0_0" length="1" pos="95.72"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_501600594#6_0" lane="501600594#6_0" length="1" pos="20.02"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-537238006_0" lane="-537238006_0" length="1" pos="70.43"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_165723781#0_0" lane="165723781#0_0" length="1" pos="36.12"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_165723781#0_1" lane="165723781#0_1" length="1" pos="36.12"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_751532#10_0" lane="751532#10_0" length="1" pos="4.74"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-537238007#1_0" lane="-537238007#1_0" length="1" pos="68.57000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138137060_0" lane="138137060_0" length="1" pos="63.38"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_502287257#2_0" lane="502287257#2_0" length="1" pos="56.72"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_502287257#2_1" lane="502287257#2_1" length="1" pos="56.72"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_537238007#0_0" lane="537238007#0_0" length="1" pos="347.75"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-55637437#0_0" lane="-55637437#0_0" length="1" pos="21.24"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_235919281#1_0" lane="235919281#1_0" length="1" pos="3.7899999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_38375345#7_0" lane="38375345#7_0" length="1" pos="9.620000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_38375345#7_1" lane="38375345#7_1" length="1" pos="9.620000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_38375345#7_2" lane="38375345#7_2" length="1" pos="9.620000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727153_0" lane="727153_0" length="1" pos="74.33000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727153_1" lane="727153_1" length="1" pos="74.33000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-61188951_0" lane="-61188951_0" length="1" pos="110.72"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-61188951_1" lane="-61188951_1" length="1" pos="110.72"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138125326#1_0" lane="138125326#1_0" length="1" pos="22.099999999999998"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138125326#1_1" lane="138125326#1_1" length="1" pos="22.099999999999998"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22635068#1_0" lane="22635068#1_0" length="1" pos="71.13000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22635068#1_1" lane="22635068#1_1" length="1" pos="71.13000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-61755097#0_0" lane="-61755097#0_0" length="1" pos="52.5"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_34817465#8_0" lane="34817465#8_0" length="1" pos="64.76"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_431720241#0_0" lane="431720241#0_0" length="1" pos="660.98"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_431720241#0_1" lane="431720241#0_1" length="1" pos="660.98"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_431720241#0_2" lane="431720241#0_2" length="1" pos="660.98"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_98392667#0_0" lane="98392667#0_0" length="1" pos="182.31"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_98392667#0_1" lane="98392667#0_1" length="1" pos="182.31"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_98392667#0_2" lane="98392667#0_2" length="1" pos="182.31"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-69600627#11_0" lane="-69600627#11_0" length="1" pos="107.73"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_230897276#1_0" lane="230897276#1_0" length="1" pos="88.11"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_69600627#10_0" lane="69600627#10_0" length="1" pos="44.41"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-727507_0" lane="-727507_0" length="1" pos="101.74000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727505#2_0" lane="727505#2_0" length="1" pos="54.769999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727505#2_1" lane="727505#2_1" length="1" pos="54.769999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727508#0_0" lane="727508#0_0" length="1" pos="81.91000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727508#0_1" lane="727508#0_1" length="1" pos="81.91000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-73552050#0_0" lane="-73552050#0_0" length="1" pos="46.32"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-73552050#0_1" lane="-73552050#0_1" length="1" pos="46.32"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135349964#13_0" lane="135349964#13_0" length="1" pos="26.75"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138124564#3_0" lane="138124564#3_0" length="1" pos="55.26"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138124564#3_1" lane="138124564#3_1" length="1" pos="55.26"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-747232#2_0" lane="-747232#2_0" length="1" pos="90.44000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_747228#2_0" lane="747228#2_0" length="1" pos="49.76"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_747232#1_0" lane="747232#1_0" length="1" pos="23.83"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-75862208_0" lane="-75862208_0" length="1" pos="79.77000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_120470708_0" lane="120470708_0" length="1" pos="30.9"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_165996566_0" lane="165996566_0" length="1" pos="15.290000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_165996566_1" lane="165996566_1" length="1" pos="15.290000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_31327366#3_0" lane="31327366#3_0" length="1" pos="14.09"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-78055483#1_0" lane="-78055483#1_0" length="1" pos="81.02000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135342446#9_0" lane="135342446#9_0" length="1" pos="79.26"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138227397#3_0" lane="138227397#3_0" length="1" pos="161.51000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_217918202_0" lane="217918202_0" length="1" pos="149.9"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_-87427939_0" lane="-87427939_0" length="1" pos="57.0"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29450522#8_0" lane="29450522#8_0" length="1" pos="57.26"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_502287257#4_0" lane="502287257#4_0" length="1" pos="281.25"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_502287257#4_1" lane="502287257#4_1" length="1" pos="281.25"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_107185799#2_0" lane="107185799#2_0" length="1" pos="74.35000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_107185799#2_1" lane="107185799#2_1" length="1" pos="74.35000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_178631602#0_0" lane="178631602#0_0" length="1" pos="0.7300000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_178631602#0_1" lane="178631602#0_1" length="1" pos="0.7300000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_107254099_0" lane="107254099_0" length="1" pos="188.74"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_107254099_1" lane="107254099_1" length="1" pos="188.74"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138120046#1_0" lane="138120046#1_0" length="1" pos="9.48"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138120046#1_1" lane="138120046#1_1" length="1" pos="9.48"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_98387829#1_0" lane="98387829#1_0" length="1" pos="69.15"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_98387829#1_1" lane="98387829#1_1" length="1" pos="69.15"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_118628034#0_0" lane="118628034#0_0" length="1" pos="3.23"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_118628034#0_1" lane="118628034#0_1" length="1" pos="3.23"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_35389138#0_0" lane="35389138#0_0" length="1" pos="195.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_35389138#0_1" lane="35389138#0_1" length="1" pos="195.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_35389138#2_0" lane="35389138#2_0" length="1" pos="4.07"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_35389138#2_1" lane="35389138#2_1" length="1" pos="4.07"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_523111038_1" lane="523111038_1" length="1" pos="61.589999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_523111038_2" lane="523111038_2" length="1" pos="61.589999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_129110942#2_0" lane="129110942#2_0" length="1" pos="7.280000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_129452581_0" lane="129452581_0" length="1" pos="25.09"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_292634308_0" lane="292634308_0" length="1" pos="61.08"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_293350021_0" lane="293350021_0" length="1" pos="41.03"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_293350021_1" lane="293350021_1" length="1" pos="41.03"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_129111146#1_0" lane="129111146#1_0" length="1" pos="57.66"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_129111146#1_1" lane="129111146#1_1" length="1" pos="57.66"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_129462269#1_0" lane="129462269#1_0" length="1" pos="22.27"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22634594_0" lane="22634594_0" length="1" pos="139.09"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22634594_1" lane="22634594_1" length="1" pos="139.09"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135339515_0" lane="135339515_0" length="1" pos="59.11"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135339515_1" lane="135339515_1" length="1" pos="59.11"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_60889235_0" lane="60889235_0" length="1" pos="50.57"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727503#1_0" lane="727503#1_0" length="1" pos="47.47"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727503#1_1" lane="727503#1_1" length="1" pos="47.47"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135339516_0" lane="135339516_0" length="1" pos="59.6"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135339516_1" lane="135339516_1" length="1" pos="59.6"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_135339516_2" lane="135339516_2" length="1" pos="59.6"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_337008055_0" lane="337008055_0" length="1" pos="59.28"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_337008055_1" lane="337008055_1" length="1" pos="59.28"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_337008055_2" lane="337008055_2" length="1" pos="59.28"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_137231946#7_0" lane="137231946#7_0" length="1" pos="38.18"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_137231946#7_1" lane="137231946#7_1" length="1" pos="38.18"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_367573430#2_0" lane="367573430#2_0" length="1" pos="13.58"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_78055483#2_0" lane="78055483#2_0" length="1" pos="45.83"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138017447#0_0" lane="138017447#0_0" length="1" pos="137.77"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138017447#0_1" lane="138017447#0_1" length="1" pos="137.77"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138124569#4_0" lane="138124569#4_0" length="1" pos="55.83"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138124569#4_1" lane="138124569#4_1" length="1" pos="55.83"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138124572#2_0" lane="138124572#2_0" length="1" pos="22.86"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138124572#2_1" lane="138124572#2_1" length="1" pos="22.86"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14894535_0" lane="14894535_0" length="1" pos="42.65"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14894535_1" lane="14894535_1" length="1" pos="42.65"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138125080#7_0" lane="138125080#7_0" length="1" pos="71.18"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138125080#7_1" lane="138125080#7_1" length="1" pos="71.18"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138125080#7_2" lane="138125080#7_2" length="1" pos="71.18"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_20647714#2_0" lane="20647714#2_0" length="1" pos="61.769999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_20647714#2_1" lane="20647714#2_1" length="1" pos="61.769999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_20647714#2_2" lane="20647714#2_2" length="1" pos="61.769999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_138397654#17_0" lane="138397654#17_0" length="1" pos="46.379999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_39861649#2_0" lane="39861649#2_0" length="1" pos="56.61"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_55637437#1_0" lane="55637437#1_0" length="1" pos="188.51000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_55637437#1_1" lane="55637437#1_1" length="1" pos="188.51000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_55637437#1_2" lane="55637437#1_2" length="1" pos="188.51000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14891038_0" lane="14891038_0" length="1" pos="91.54"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14891038_1" lane="14891038_1" length="1" pos="91.54"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14891038_2" lane="14891038_2" length="1" pos="91.54"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_14891038_3" lane="14891038_3" length="1" pos="91.54"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_17187928#5_0" lane="17187928#5_0" length="1" pos="57.089999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_17187928#5_1" lane="17187928#5_1" length="1" pos="57.089999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_204614032_0" lane="204614032_0" length="1" pos="183.96"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_204614032_1" lane="204614032_1" length="1" pos="183.96"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_283487903#1_0" lane="283487903#1_0" length="1" pos="221.45000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_283487903#1_1" lane="283487903#1_1" length="1" pos="221.45000000000002"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_175660899#2_0" lane="175660899#2_0" length="1" pos="7.780000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_175660899#2_1" lane="175660899#2_1" length="1" pos="7.780000000000001"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_224709286_0" lane="224709286_0" length="1" pos="54.559999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29425839#7_0" lane="29425839#7_0" length="1" pos="50.51"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29425839#7_1" lane="29425839#7_1" length="1" pos="50.51"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_182814158_0" lane="182814158_0" length="1" pos="1.17"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_182814158_1" lane="182814158_1" length="1" pos="1.17"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_182814158_2" lane="182814158_2" length="1" pos="1.17"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_182814158_3" lane="182814158_3" length="1" pos="1.17"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_38375347_0" lane="38375347_0" length="1" pos="73.22"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_38375347_1" lane="38375347_1" length="1" pos="73.22"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_38375347_2" lane="38375347_2" length="1" pos="73.22"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_38375347_3" lane="38375347_3" length="1" pos="73.22"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_203831227_0" lane="203831227_0" length="1" pos="3.4899999999999998"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_203831227_1" lane="203831227_1" length="1" pos="3.4899999999999998"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29427155_0" lane="29427155_0" length="1" pos="61.879999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_29427155_1" lane="29427155_1" length="1" pos="61.879999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_80511362_0" lane="80511362_0" length="1" pos="63.339999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_224709287_0" lane="224709287_0" length="1" pos="72.17"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_224709287_1" lane="224709287_1" length="1" pos="72.17"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_32243374_0" lane="32243374_0" length="1" pos="58.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_747232#7_0" lane="747232#7_0" length="1" pos="38.33"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22634728#4_0" lane="22634728#4_0" length="1" pos="194.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_22634728#4_1" lane="22634728#4_1" length="1" pos="194.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_233809947_0" lane="233809947_0" length="1" pos="24.72"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_55637430_0" lane="55637430_0" length="1" pos="39.309999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_55637430_1" lane="55637430_1" length="1" pos="39.309999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_55637430_2" lane="55637430_2" length="1" pos="39.309999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_236512046_0" lane="236512046_0" length="1" pos="71.97"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_236512046_1" lane="236512046_1" length="1" pos="71.97"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_236512046_2" lane="236512046_2" length="1" pos="71.97"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_434298721_0" lane="434298721_0" length="1" pos="29.38"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_434298721_1" lane="434298721_1" length="1" pos="29.38"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_434298721_2" lane="434298721_2" length="1" pos="29.38"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_279050194#1_0" lane="279050194#1_0" length="1" pos="36.059999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_279050194#1_1" lane="279050194#1_1" length="1" pos="36.059999999999995"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_279054333#1_0" lane="279054333#1_0" length="1" pos="45.839999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_279054333#1_1" lane="279054333#1_1" length="1" pos="45.839999999999996"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_431720240#1_0" lane="431720240#1_0" length="1" pos="679.88"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_431720240#1_1" lane="431720240#1_1" length="1" pos="679.88"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727171#3_0" lane="727171#3_0" length="1" pos="55.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727171#3_1" lane="727171#3_1" length="1" pos="55.29"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727510#2_0" lane="727510#2_0" length="1" pos="10.68"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_727510#2_1" lane="727510#2_1" length="1" pos="10.68"/>
-    <e1Detector file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" freq="4" friendlyPos="x" id="e1det_93100419#7_0" lane="93100419#7_0" length="1" pos="18.82"/>
-</additional>
+<additionals>
+    <e1Detector id="e1det_-129518914_0" lane="-129518914_0" pos="11.24" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-138124572#1_0" lane="-138124572#1_0" pos="67.47" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-138124572#1_1" lane="-138124572#1_1" pos="67.47" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-138397654#13_0" lane="-138397654#13_0" pos="17.38" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-138397654#9_0" lane="-138397654#9_0" pos="22.70" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-14890634#0_0" lane="-14890634#0_0" pos="46.14" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-224709345#0_0" lane="-224709345#0_0" pos="73.31" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-224709345#0_1" lane="-224709345#0_1" pos="73.31" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-31404826#1_0" lane="-31404826#1_0" pos="45.48" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-317727542_0" lane="-317727542_0" pos="61.54" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-40950946#0_0" lane="-40950946#0_0" pos="4.41" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-55637437#0_0" lane="-55637437#0_0" pos="17.75" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-61188951_0" lane="-61188951_0" pos="7.61" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-61188951_1" lane="-61188951_1" pos="7.54" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-73552050#0_0" lane="-73552050#0_0" pos="42.59" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_-73552050#0_1" lane="-73552050#0_1" pos="42.59" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_127658900_0" lane="127658900_0" pos="0.00" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_127658900_1" lane="127658900_1" pos="0.00" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_135339516_0" lane="135339516_0" pos="50.28" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_135339516_1" lane="135339516_1" pos="50.28" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_135339516_2" lane="135339516_2" pos="50.28" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138124564#3_0" lane="138124564#3_0" pos="45.26" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138124564#3_1" lane="138124564#3_1" pos="45.26" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138124569#4_0" lane="138124569#4_0" pos="55.61" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138124569#4_1" lane="138124569#4_1" pos="55.61" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138124572#0_0" lane="138124572#0_0" pos="8.09" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138124572#0_1" lane="138124572#0_1" pos="8.09" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138124572#2_0" lane="138124572#2_0" pos="21.74" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138124572#2_1" lane="138124572#2_1" pos="21.74" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138125326#1_0" lane="138125326#1_0" pos="3.91" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138125326#1_1" lane="138125326#1_1" pos="4.35" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138397654#11_0" lane="138397654#11_0" pos="17.49" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138397654#17_0" lane="138397654#17_0" pos="26.84" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_138397654#8_0" lane="138397654#8_0" pos="6.83" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_14890634#1_0" lane="14890634#1_0" pos="43.74" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_14890634#1_1" lane="14890634#1_1" pos="43.74" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_174674980#1_0" lane="174674980#1_0" pos="0.44" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_233809947_0" lane="233809947_0" pos="14.76" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_235919281#1_0" lane="235919281#1_0" pos="0.54" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_29427155_0" lane="29427155_0" pos="67.90" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_29427155_1" lane="29427155_1" pos="67.90" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_31404826#1_0" lane="31404826#1_0" pos="45.47" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_31404826#1_1" lane="31404826#1_1" pos="45.47" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_38375345#7_0" lane="38375345#7_0" pos="4.36" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_38375345#7_1" lane="38375345#7_1" pos="4.36" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_38375345#7_2" lane="38375345#7_2" pos="4.36" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_38375347_0" lane="38375347_0" pos="75.06" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_38375347_1" lane="38375347_1" pos="75.06" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_38375347_2" lane="38375347_2" pos="75.06" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_39861649#2_0" lane="39861649#2_0" pos="49.01" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_434298721_0" lane="434298721_0" pos="25.87" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_434298721_1" lane="434298721_1" pos="25.87" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_434298721_2" lane="434298721_2" pos="25.87" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_55637430_0" lane="55637430_0" pos="35.54" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_55637430_1" lane="55637430_1" pos="35.54" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_55637430_2" lane="55637430_2" pos="35.54" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_55637437#1_0" lane="55637437#1_0" pos="87.35" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_55637437#1_1" lane="55637437#1_1" pos="87.35" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_55637437#1_2" lane="55637437#1_2" pos="87.35" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_61188951_0" lane="61188951_0" pos="7.00" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_61188951_1" lane="61188951_1" pos="7.03" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_727153_0" lane="727153_0" pos="61.60" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_727153_1" lane="727153_1" pos="61.60" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_73552050#4_0" lane="73552050#4_0" pos="0.00" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_73552050#4_1" lane="73552050#4_1" pos="0.00" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_748206#1_0" lane="748206#1_0" pos="111.69" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+    <e1Detector id="e1det_80511362_0" lane="80511362_0" pos="53.06" freq="4.00" file="/home/kealan/College/fyp/mapdata/cork-city/detector_results/e1_output.xml" friendlyPos="1"/>
+</additionals>

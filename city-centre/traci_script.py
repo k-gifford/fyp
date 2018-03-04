@@ -52,7 +52,8 @@ def run():
         traci.simulationStep()
 
         """
-        start accumulating counts of vehicles flowing over this e1Detector
+        Start accumulating counts of vehicles flowing over these e1Detector
+        TODO move this to a SCOOT detector class to represent the junction.
         """
         cfp_1[cfp_pointer] = cfp_1[cfp_pointer] + traci.inductionloop.getLastStepVehicleNumber("e1Detector_73552050#2_0_79")
         cfp_2[cfp_pointer] = cfp_2[cfp_pointer] + traci.inductionloop.getLastStepVehicleNumber("e1Detector_73552050#2_1_80")
@@ -69,17 +70,26 @@ def run():
             for c in cfps:
                 c.append(0)
 
+        # reset cfp_pointer if we have reached end of cycle
+        if step % 90 is 0:
+            cfp_pointer
+
+
         # increment the simulation by 1 step
         step += 1
     # END WHILE
+
     """
-    trace = go.Bar(
-    x = list(range(int(step/4))),
-    y = cfp_e1
-    )
-    data = [trace]
-    py.iplot(data)
+    Histograms for the detector cyclic flow profiles (for visualisation)
     """
+    for c in cfps:
+        trace = go.Bar(
+        x = list(range(int(step/4))),
+        y = c
+        )
+        data = [trace]
+        py.iplot(data)
+
 
 
 

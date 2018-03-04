@@ -26,6 +26,7 @@
     </ramp_guessing>
 
     <processing>
+        <no-turnarounds value="true"/>
         <osm.stop-output.length value="25"/>
         <geometry.remove value="true"/>
         <roundabouts.guess value="true"/>
