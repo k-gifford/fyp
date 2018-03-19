@@ -8,4 +8,6 @@ The aim is to improve vehicle throughput in junctions and to reduce overall wait
 
 # Currently
 
-Implementing SCOOT in the city-centre scenario
+Implementing the intelligent traffic light algorithm as described in this paper: http://bit.ly/2DDMs59
+
+
