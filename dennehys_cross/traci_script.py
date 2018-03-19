@@ -34,15 +34,21 @@ def run():
     dennehys_cross = Atl("354512", "induction_loops/e1.add.xml")
     dennehys_cross.assignJunctionDetectors(2, 1, 2, 1)
     dennehys_cross.retreiveTrafficLogicPhases("tl.add.xml")
-
+    logic = dennehys_cross.getTrafficLightLogic()
+    print(logic)
     while step < 1000:
 
         # stake one step in the simulation
         traci.simulationStep()
         # update the vehicle counts for NS and EW directions
-        #print("NS Count: ", dennehys_cross.detectNS(), ", EW Count: ", dennehys_cross.detectEW())
+        ns = dennehys_cross.detectNS()
+        ew = dennehys_cross.detectEW()
+        # determine the next active phase
+        dennehys_cross.determineNextActivePhase(ns, ew)
+
 
         # increment the simulation by 1 step
+        dennehys_cross.incrementActivePhaseDuration()
         step += 1
 
     # when finished all steps, close traci

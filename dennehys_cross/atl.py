@@ -13,13 +13,16 @@ class Atl:
 
     def __init__(self, id, induction_loops_file_location):
         self.id = id
-        self.traffic_lights  = []
+        self.trafficLightLogic  = dict()
         self.e1_loops = []
         self.retreiveE1LoopIds(induction_loops_file_location)
         self.nsCount = 0
         self.ewCount = 0
         self.nsLoops = []
         self.ewLoops = []
+        self.activePhase = 0
+        self.nextActivePhase = 0
+        self.activePhaseDuration = 0
 
     def getId(self):
         return self.id
@@ -77,11 +80,67 @@ class Atl:
         tree = ET.parse(location)
         root = tree.getroot()
         for logic in root:
+            i = 0
             for phase in logic.iter('phase'):
-                self.traffic_lights.append(phase.attrib['duration'])
+                self.trafficLightLogic[i] = [phase.attrib['duration'], phase.attrib['state']]
+                i += 1
 
-    def getTrafficLightDurations(self):
-        return self.traffic_lights
+    def getTrafficLightLogic(self):
+        return self.trafficLightLogic
+
+    def getActivePhase(self):
+        return self.activePhase
+
+    def setActivePhase(self, phase):
+        self.activePhase = phase
+
+    def getNextActivePhase(self):
+        return self.nextActivePhase
+
+    def setNextActivePhase(self, phase):
+        self.nextActivePhase = phase
+
+    def getActivePhaseDuration(self):
+        return self.activePhaseDuration
+
+    def resetActivePhaseDuration(self):
+        self.activePhaseDuration = 0
+
+    def incrementActivePhaseDuration(self):
+        self.activePhaseDuration += 1
+
+
+    def determineNextActivePhase(self, ns, ew):
+        if self.getActivePhase() is 0:
+            if ns >= ew:
+                self.setNextActivePhase(2)
+            elif ns < ew:
+                if self.getActivePhaseDuration() > 60:
+                    self.setNextActivePhase(2)
+            else:
+                self.setNextActivePhase(0)
+        elif self.getActivePhase() is 2:
+            if ns >= ew:
+                self.setNextActivePhase(0)
+            elif ns < ew:
+                if self.getActivePhaseDuration() > 60:
+                    self.setNextActivePhase(0)
+            else:
+                self.setNextActivePhase(2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def main():
