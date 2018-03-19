@@ -1,6 +1,7 @@
 # using a TraCi script to extract information about traffic light states
 import os, sys
 # import csv
+from atl import Atl
 
 def check_env():
     # check if the SUMO_HOME environment vairable is set
@@ -16,7 +17,7 @@ def run():
     check_env()
     # store location of sumo-gui (if you want to launch with the gui)
     sumoBinary = "/usr/bin/sumo-gui"
-    sumoCmd = [sumoBinary, "-c", "osm.sumocfg"]
+    sumoCmd = [sumoBinary, "--start" ,"-c", "osm.sumocfg"]
     import traci
 
     # start simulation, connecting to it using this script
@@ -28,32 +29,25 @@ def run():
     step = 0
 
     #get initial traffic light state for traffic intersection 354512
-    tl_state = traci.trafficlight.getRedYellowGreenState("354512")
-    tl_program = traci.trafficlight.getProgram("354512")
+    #tl_state = traci.trafficlight.getRedYellowGreenState("354512")
+    #tl_program = traci.trafficlight.getProgram("354512")
+    traci.trafficlight.setProgram("354512", "dynamic")
+
+    # create smart traffic light for dennehys cross junction
+    dennehys_cross = Atl("354512", traci.trafficlight.getRedYellowGreenState("354512"), "induction_loops/e1.add.xml")
+    #print(dennehys_cross.getState())
+    loops = dennehys_cross.getE1Loops()
+    dennehys_cross.assignJunctionDetectors(2, 1, 2, 1)
+
+
 
     while step < 1000:
 
         # stake one step in the simulation
         traci.simulationStep()
-
-        # if the traffic light has changed since the last step then update
-        if tl_state != traci.trafficlight.getRedYellowGreenState("354512"):
-
-            tl_state = traci.trafficlight.getRedYellowGreenState("354512")
-            # writer.writerows(tl_state)
-            # print(tl_state)
-            # print(traci.trafficlight.getCompleteRedYellowGreenDefinition("354512"))
-            program = traci.trafficlight.getProgram("354512")
-            # print(traci.trafficlight.getProgram("354512"))
-            # print(traci.trafficlight.getPhase("354512"))
-
-            if program == 'allred':
-                traci.trafficlight.setProgram("354512", "0")
-            else:
-                traci.trafficlight.setProgram("354512", "allred")
-        else:
-            pass
-
+        # update the vehicle counts for NS and EW directions
+        dennehys_cross.detectNS()
+        dennehys_cross.detectEW()
         # increment the simulation by 1 step
         step += 1
 
