@@ -36,7 +36,6 @@ class Atl:
         for e1 in root:
             self.e1_loops.append(e1.attrib['id'])
 
-
     """
     Takes in the number of incoming lanes from North, East, South and West,
     for a particular junction. And assigns the detectors on those lanes
@@ -59,7 +58,6 @@ class Atl:
                 self.ewLoops.append(loop)
                 lane += 1
 
-
     def detectNS(self):
         for loop in self.nsLoops:
             self.nsCount += traci.inductionloop.getLastStepVehicleNumber(loop)
@@ -69,6 +67,10 @@ class Atl:
         for loop in self.nsLoops:
             self.ewCount += traci.inductionloop.getLastStepVehicleNumber(loop)
         return self.ewCount
+
+    def resetVehicleCounts(self):
+        self.nsCount = 0
+        self.ewCount = 0
 
 
 def main():
