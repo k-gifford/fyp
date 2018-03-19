@@ -11,9 +11,9 @@ import xml.etree.ElementTree as ET
 
 class Atl:
 
-    def __init__(self, id, traffic_lights, induction_loops_file_location):
+    def __init__(self, id, induction_loops_file_location):
         self.id = id
-        self.traffic_lights  = traffic_lights
+        self.traffic_lights  = []
         self.e1_loops = []
         self.retreiveE1LoopIds(induction_loops_file_location)
         self.nsCount = 0
@@ -64,7 +64,7 @@ class Atl:
         return self.nsCount
 
     def detectEW(self):
-        for loop in self.nsLoops:
+        for loop in self.ewLoops:
             self.ewCount += traci.inductionloop.getLastStepVehicleNumber(loop)
         return self.ewCount
 
@@ -73,9 +73,20 @@ class Atl:
         self.ewCount = 0
 
 
+    def retreiveTrafficLogicPhases(self, location):
+        tree = ET.parse(location)
+        root = tree.getroot()
+        for logic in root:
+            for phase in logic.iter('phase'):
+                self.traffic_lights.append(phase.attrib['duration'])
+
+    def getTrafficLightDurations(self):
+        return self.traffic_lights
+
+
 def main():
-    dennehys_cross = Atl("354512")
-    print(dennehys_cross.getId())
+    dennehys_cross = Atl("354512", "induction_loops/e1.add.xml")
+    dennehys_cross.assignJunctionDetectors(2, 1, 2, 1)
 
 if __name__ == "__main__":
     main()

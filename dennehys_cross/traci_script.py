@@ -28,31 +28,24 @@ def run():
     traci.start(sumoCmd)
     step = 0
 
-    #get initial traffic light state for traffic intersection 354512
-    #tl_state = traci.trafficlight.getRedYellowGreenState("354512")
-    #tl_program = traci.trafficlight.getProgram("354512")
     traci.trafficlight.setProgram("354512", "dynamic")
 
     # create smart traffic light for dennehys cross junction
-    dennehys_cross = Atl("354512", traci.trafficlight.getRedYellowGreenState("354512"), "induction_loops/e1.add.xml")
-    #print(dennehys_cross.getState())
-    loops = dennehys_cross.getE1Loops()
+    dennehys_cross = Atl("354512", "induction_loops/e1.add.xml")
     dennehys_cross.assignJunctionDetectors(2, 1, 2, 1)
-
-
+    dennehys_cross.retreiveTrafficLogicPhases("tl.add.xml")
 
     while step < 1000:
 
         # stake one step in the simulation
         traci.simulationStep()
         # update the vehicle counts for NS and EW directions
-        dennehys_cross.detectNS()
-        dennehys_cross.detectEW()
+        #print("NS Count: ", dennehys_cross.detectNS(), ", EW Count: ", dennehys_cross.detectEW())
+
         # increment the simulation by 1 step
         step += 1
 
     # when finished all steps, close traci
-
     traci.close()
 
 def main():
