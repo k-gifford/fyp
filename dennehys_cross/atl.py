@@ -22,7 +22,10 @@ class Atl:
         self.ewLoops = []
         self.activePhase = 0
         self.nextActivePhase = 0
-        self.activePhaseDuration = 0
+        self.activePhaseDuration = 30
+        self.nextActivePhaseDuration = 20
+        self.totalRunningTime = 0
+        self.nextGreenPhaseCalculation = 30
 
     def getId(self):
         return self.id
@@ -106,17 +109,19 @@ class Atl:
     def resetActivePhaseDuration(self):
         self.activePhaseDuration = 0
 
-    def incrementActivePhaseDuration(self):
+    def incrementTotalRunningTime(self):
         self.activePhaseDuration += 1
 
-
-    def determineNextActivePhase(self, ns, ew):
+    def determineNextActivePhase(self):
+        ns = self.nsCount
+        ew = self.ewCount
         if self.getActivePhase() is 0:
             if ns >= ew:
                 self.setNextActivePhase(2)
             elif ns < ew:
                 if self.getActivePhaseDuration() > 60:
                     self.setNextActivePhase(2)
+                    self.resetActivePhaseDuration()
             else:
                 self.setNextActivePhase(0)
         elif self.getActivePhase() is 2:
@@ -127,18 +132,34 @@ class Atl:
                     self.setNextActivePhase(0)
             else:
                 self.setNextActivePhase(2)
+                self.resetActivePhaseDuration()
 
+    def determineNextActivePhaseDuration(self):
+        ns = self.nsCount
+        ew = self.ewCount
+        if self.activePhase != self.nextActivePhase:
+            self.nextActivePhaseDuration = 20
+        else:
+            if self.activePhase is 0 and ew > 0:
+                self.nextActivePhaseDuration = self.nextActivePhaseDuration / ew
+            elif self.activePhase is 0 and ew == 0:
+                self.nextActivePhaseDuration = self.nextActivePhaseDuration
+            elif self.activePhase is 2 and ns > 0:
+                self.nextActivePhaseDuration = self.nextActivePhaseDuration / ns
+            elif self.activePhase is 2 and ns == 0:
+                self.nextActivePhaseDuration = self.nextActivePhaseDuration
 
+        if self.nextActivePhaseDuration > 60:
+            self.nextActivePhaseDuration = 60
 
+    def changePhase(self):
+        self.activePhase = self.nextActivePhase
+        self.activePhaseDuration = self.nextActivePhaseDuration
+        self.resetVehicleCounts()
 
-
-
-
-
-
-
-
-
+    def nextGreenCalculation(self):
+        self.nextGreenPhaseCalculation += self.nextActivePhaseDuration
+        return self.nextGreenPhaseCalculation
 
 
 

@@ -36,19 +36,31 @@ def run():
     dennehys_cross.retreiveTrafficLogicPhases("tl.add.xml")
     logic = dennehys_cross.getTrafficLightLogic()
     print(logic)
+
+
     while step < 1000:
 
-        # stake one step in the simulation
+        # take one step in the simulation
         traci.simulationStep()
         # update the vehicle counts for NS and EW directions
-        ns = dennehys_cross.detectNS()
-        ew = dennehys_cross.detectEW()
+        dennehys_cross.detectNS()
+        dennehys_cross.detectEW()
+        # incremement the total time this phase has been running
+
         # determine the next active phase
-        dennehys_cross.determineNextActivePhase(ns, ew)
+        if step == dennehys_cross.nextGreenPhaseCalculation - 1:
+            dennehys_cross.determineNextActivePhase()
+            dennehys_cross.determineNextActivePhaseDuration()
+            dennehys_cross.nextGreenCalculation()
+            print(dennehys_cross.getNextActivePhase())
 
+            if dennehys_cross.getNextActivePhase != dennehys_cross.getActivePhase():
+                dennehys_cross.resetVehicleCounts()
+                dennehys_cross.resetActivePhaseDuration
 
-        # increment the simulation by 1 step
-        dennehys_cross.incrementActivePhaseDuration()
+            dennehys_cross.changePhase()
+
+        # increment by 1 step
         step += 1
 
     # when finished all steps, close traci
