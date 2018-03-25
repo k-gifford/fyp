@@ -18,12 +18,14 @@ class Atlc:
         self.ewCount = 0
         self.nsLoops = []
         self.ewLoops = []
+
         self.activePhase = 0  # simulation will start with EW direction green
         self.activePhaseDuration = 30  # initial active phase runs for 30 seconds
+        self.activePhaseTotalRunningTime = 0
+
         self.nextActivePhase = 0
         self.nextActivePhaseDuration = 20
-        self.activePhaseTotalRunningTime = 0
-        self.phaseSettingTime = 30
+        self.nextPhaseSettingTime = 30
         self.nextGreenPhaseDeterminationTime = 30
 
     def getId(self):
@@ -198,6 +200,12 @@ class Atlc:
         return self.nextGreenPhaseDeterminationTime
 
     """ Next green phase setting time """
+    def getNextPhaseSettingTime(self):
+        return self.nextPhaseSettingTime
+
+    def setNextPhaseSettingTime(self, steps):
+        self.nextPhaseSettingTime = steps + self.getNextActivePhaseDuration()
+        
 
     """ Change the phase to the next phase """
 

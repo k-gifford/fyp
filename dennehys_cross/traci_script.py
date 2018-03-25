@@ -61,12 +61,16 @@ def run():
             print("determining next active phase", dennehyscross.determineNextActivePhase())
             print("next active phase", dennehyscross.getNextActivePhase())
             print("next phase determination time", dennehyscross.setNextGreenPhaseDeterminationTime(step))
-
+            print("next phase setting time", dennehyscross.getNextPhaseSettingTime())
 
         """ Is it time to set the next phase? """
-        if step == dennehyscross.getPhaseSettingTime():
-
-
+        if step == dennehyscross.getNextPhaseSettingTime():
+            print("========")
+            print("Current step:", step)
+            print("current phase", dennehyscross.getActivePhase())
+            print("next active phase", dennehyscross.getNextActivePhase())
+            dennehyscross.setNextPhaseSettingTime(step )
+            print("next phase setting time", dennehyscross.getNextPhaseSettingTime())
 
 
         # increment by 1 step
