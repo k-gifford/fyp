@@ -55,23 +55,34 @@ def run():
 
         """ Is it time to determine what the next active phase should be? """
         if step == dennehyscross.getNextGreenPhaseDeterminationTime() - 1:
-            print("+++++++")
-            print("Current step:", step)
-            print("current phase", dennehyscross.getActivePhase())
-            print("determining next active phase", dennehyscross.determineNextActivePhase())
-            print("next active phase", dennehyscross.getNextActivePhase())
-            print("next phase determination time", dennehyscross.setNextGreenPhaseDeterminationTime(step))
-            print("next phase setting time", dennehyscross.getNextPhaseSettingTime())
+            print("######################")
+            print("DETERMINING NEXT PHASE")
+            dennehyscross.showStatus(step)
+            print("----------------------")
+            dennehyscross.determineNextActivePhase()
+            dennehyscross.determineNextActivePhaseDuration(step)
+            if dennehyscross.getActivePhase() == dennehyscross.getNextActivePhase():
+                dennehyscross.setNextGreenPhaseDeterminationTime(step)
+                dennehyscross.setNextPhaseSettingTime(step)
+                print("1")
+            else:
+                dennehyscross.increaseActivePhaseDuration(dennehyscross.getNextActivePhaseDuration())
+                dennehyscross.setNextGreenPhaseDeterminationTime(step)
+                print("2")
 
-        """ Is it time to set the next phase? """
-        if step == dennehyscross.getNextPhaseSettingTime():
-            print("========")
-            print("Current step:", step)
-            print("current phase", dennehyscross.getActivePhase())
-            print("next active phase", dennehyscross.getNextActivePhase())
-            dennehyscross.setNextPhaseSettingTime(step )
-            print("next phase setting time", dennehyscross.getNextPhaseSettingTime())
+            dennehyscross.showStatus(step)
+            print()
+        elif step == dennehyscross.getNextPhaseSettingTime():
+            print("######################")
+            print("SWITCHING TO NEXT PHASE")
+            dennehyscross.showStatus(step)
+            print("----------------------")
+            dennehyscross.switchToNextActivePhase()
+            dennehyscross.resetActivePhaseTotalRunningTime()
+            dennehyscross.setNextGreenPhaseDeterminationTime(step -1)
+            dennehyscross.showStatus(step)
 
+            print()
 
         # increment by 1 step
         step += 1

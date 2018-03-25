@@ -109,6 +109,9 @@ class Atlc:
     def setActivePhaseDuration(self, duration):
         self.activePhaseDuration = duration
 
+    def increaseActivePhaseDuration(self, duration):
+        self.activePhaseDuration += self.nextActivePhaseDuration
+
     def getActivePhaseTotalRunningTime(self):
         return self.activePhaseTotalRunningTime
 
@@ -154,7 +157,7 @@ class Atlc:
                 else:
                     self.setNextActivePhase(2)
 
-        return self.nextActivePhase
+
 
     """ Determing how long the next active phase should run for.
     Again, only called at a specific timestep interval """
@@ -164,21 +167,27 @@ class Atlc:
         defaultDuration = 20
 
         if self.activePhase != self.nextActivePhase:  # if the phases are different
-            self.nextActivePhaseDuration = 20
+            self.nextActivePhaseDuration = defaultDuration
+            #print("5")
         else:
-            if self.activePhase is 0 and ew > 0:
+            #print("0")
+            if self.activePhase is 0 and ew > 0:  # if the active phase is EW
                 self.nextActivePhaseDuration = round(defaultDuration / ew, 0)
-                self.updatePhaseDeterminationTime(steps)
-            elif self.activePhase is 2 and ns > 0:
+                #print("1")
+            elif self.activePhase is 0 and ew == 0:
+                self.nextActivePhaseDuration = defaultDuration
+                #print("2")
+            elif self.activePhase is 2 and ns > 0:  # if the active phase is NS
                 self.nextActivePhaseDuration = round(defaultDuration / ns, 0)
-                self.updatePhaseDeterminationTime(steps)
-
+                #print("3")
+            elif self.activePhase is 2 and ns == 0:
+                self.nextActivePhaseDuration = defaultDuration
+                #print("4")
         # if the total running time so far plus the next phase duration is > 60
         if self.getActivePhaseTotalRunningTime() + self.getActivePhaseDuration() > 60:
             # then limit the phase to 60 seconds
-            temp = self.getActivePhaseTotalRunningTime()
-            time = 60 - temp
-            self.nextActivePhaseDuration = time
+            self.nextActivePhaseDuration = 60 - self.getActivePhaseTotalRunningTime()
+
 
         self.resetVehicleCounts() # now reset the vehicle counts
         return self.nextActivePhaseDuration
@@ -205,15 +214,25 @@ class Atlc:
 
     def setNextPhaseSettingTime(self, steps):
         self.nextPhaseSettingTime = steps + self.getNextActivePhaseDuration()
-        
+
 
     """ Change the phase to the next phase """
+    def switchToNextActivePhase(self):
+        self.activePhase = self.nextActivePhase
+        self.setActivePhaseDuration(self.nextActivePhaseDuration)
 
 
 
 
-
-
+    def showStatus(self, step):
+        print("Current Step:", step)
+        print("Current Phase:", self.getActivePhase())
+        print("Current Phase Duration:", self.getActivePhaseDuration())
+        print("Current Phase Total Running Time:", self.getActivePhaseTotalRunningTime())
+        print("Next Phase:", self.getNextActivePhase())
+        print("Next Phase Duration:", self.getNextActivePhaseDuration())
+        print("Next Green Phase Determination At:", self.getNextGreenPhaseDeterminationTime())
+        print("Next Phase Setting Time At:", self.getNextPhaseSettingTime())
 
 
 
