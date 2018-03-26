@@ -1,4 +1,5 @@
-import os, sys
+import os
+import sys
 tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
 sys.path.append(tools)
 import traci
@@ -7,10 +8,9 @@ import xml.etree.ElementTree as ET
 
 class Atlc:
 
-
     def __init__(self, id, induction_loops_file_location):
         self.id = id
-        self.trafficLightLogic  = dict()
+        self.trafficLightLogic = dict()
         self.phases = []
         self.e1_loops = []
         self.retreiveE1LoopIds(induction_loops_file_location)
@@ -89,7 +89,6 @@ class Atlc:
                 self.phases.append(phase.attrib['state'])
                 i += 1
 
-
     def getTrafficLightLogic(self):
         return self.trafficLightLogic
 
@@ -109,7 +108,7 @@ class Atlc:
     def setActivePhaseDuration(self, duration):
         self.activePhaseDuration = duration
 
-    def increaseActivePhaseDuration(self, duration):
+    def increaseActivePhaseDuration(self):
         self.activePhaseDuration += self.nextActivePhaseDuration
 
     def getActivePhaseTotalRunningTime(self):
@@ -143,7 +142,7 @@ class Atlc:
             if ns >= ew:
                 self.setNextActivePhase(2)
             elif ns < ew:
-                if self.getActivePhaseTotalRunningTime() > 60:
+                if self.getActivePhaseTotalRunningTime() >= 60:
                     self.setNextActivePhase(2)
                 else:
                     self.setNextActivePhase(0)
@@ -152,77 +151,73 @@ class Atlc:
             if ew >= ns:
                 self.setNextActivePhase(0)
             elif ew < ns:
-                if self.getActivePhaseTotalRunningTime() > 60:
+                if self.getActivePhaseTotalRunningTime() >= 60:
                     self.setNextActivePhase(0)
                 else:
                     self.setNextActivePhase(2)
-
-
 
     """ Determing how long the next active phase should run for.
     Again, only called at a specific timestep interval """
     def determineNextActivePhaseDuration(self, steps):
         ns = self.nsCount
         ew = self.ewCount
-        defaultDuration = 20
+        default_duration = 20
 
         if self.activePhase != self.nextActivePhase:  # if the phases are different
-            self.nextActivePhaseDuration = defaultDuration
-            #print("5")
+            self.nextActivePhaseDuration = default_duration
+
         else:
-            #print("0")
+
             if self.activePhase is 0 and ew > 0:  # if the active phase is EW
-                self.nextActivePhaseDuration = round(defaultDuration / ew, 0)
-                #print("1")
+                self.nextActivePhaseDuration = round(default_duration / ew, 0)
+
             elif self.activePhase is 0 and ew == 0:
-                self.nextActivePhaseDuration = defaultDuration
-                #print("2")
+                self.nextActivePhaseDuration = default_duration
+
             elif self.activePhase is 2 and ns > 0:  # if the active phase is NS
-                self.nextActivePhaseDuration = round(defaultDuration / ns, 0)
-                #print("3")
+                self.nextActivePhaseDuration = round(default_duration / ns, 0)
+
             elif self.activePhase is 2 and ns == 0:
-                self.nextActivePhaseDuration = defaultDuration
-                #print("4")
+                self.nextActivePhaseDuration = default_duration
+
         # if the total running time so far plus the next phase duration is > 60
-        if self.getActivePhaseTotalRunningTime() + self.getActivePhaseDuration() > 60:
+        if self.getActivePhaseTotalRunningTime() + self.getNextActivePhaseDuration() > 60:
             # then limit the phase to 60 seconds
             self.nextActivePhaseDuration = 60 - self.getActivePhaseTotalRunningTime()
-
 
         self.resetVehicleCounts() # now reset the vehicle counts
         return self.nextActivePhaseDuration
 
-
     """ Next green phase determination calculator """
     def setNextGreenPhaseDeterminationTime(self, steps):
+
         # if the green phases are going to change
-        if self.getActivePhase() != self.getNextActivePhase:
+        if self.getActivePhase() != self.getNextActivePhase():
             # 20 as default, plus 1 because of the nature of the checking of the time being at -1 step
-            self.nextGreenPhaseDeterminationTime = steps + 21
+            self.nextGreenPhaseDeterminationTime = steps + 20
         # otherwise if the phase is staying the same then just add on the extra time
         else:
             # plus 1 due to same reason as above
-            self.nextGreenPhaseDeterminationTime += self.getNextActivePhaseDuration() + 1
+            self.nextGreenPhaseDeterminationTime += self.getNextActivePhaseDuration()
         return self.nextGreenPhaseDeterminationTime
 
     def getNextGreenPhaseDeterminationTime(self):
+
         return self.nextGreenPhaseDeterminationTime
 
     """ Next green phase setting time """
     def getNextPhaseSettingTime(self):
+
         return self.nextPhaseSettingTime
 
     def setNextPhaseSettingTime(self, steps):
-        self.nextPhaseSettingTime = steps + self.getNextActivePhaseDuration()
 
+        self.nextPhaseSettingTime = steps + self.getNextActivePhaseDuration()
 
     """ Change the phase to the next phase """
     def switchToNextActivePhase(self):
         self.activePhase = self.nextActivePhase
         self.setActivePhaseDuration(self.nextActivePhaseDuration)
-
-
-
 
     def showStatus(self, step):
         print("Current Step:", step)
