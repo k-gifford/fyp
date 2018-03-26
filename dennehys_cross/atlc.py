@@ -181,9 +181,21 @@ class Atlc:
                 self.nextActivePhaseDuration = default_duration
 
         # if the total running time so far plus the next phase duration is > 60
-        if self.getActivePhaseTotalRunningTime() + self.getNextActivePhaseDuration() > 60:
+        if self.getActivePhaseTotalRunningTime() + self.getNextActivePhaseDuration() >= 60:
             # then limit the phase to 60 seconds
             self.nextActivePhaseDuration = 60 - self.getActivePhaseTotalRunningTime()
+            if self.getNextActivePhaseDuration() is 0:
+                self.setNextPhaseSettingTime(steps)
+                self.setNextActivePhaseDuration(20)
+
+                if self.getActivePhase() == 0:
+                    self.setNextActivePhase(2)
+                    print("FORCING A PHASE CHANGE")
+
+                elif self.getActivePhase() == 2:
+                    self.setNextActivePhase(0)
+                    print("FORCING A PHASE CHANGE")
+
 
         self.resetVehicleCounts() # now reset the vehicle counts
         return self.nextActivePhaseDuration
