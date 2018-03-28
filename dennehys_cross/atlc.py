@@ -109,7 +109,7 @@ class Atlc:
         self.activePhaseDuration = duration
 
     def increaseActivePhaseDuration(self):
-        self.activePhaseDuration += self.nextActivePhaseDuration
+        self.activePhaseDuration +=  self.nextActivePhaseDuration
 
     def getActivePhaseTotalRunningTime(self):
         return self.activePhaseTotalRunningTime
@@ -158,7 +158,7 @@ class Atlc:
 
     """ Determing how long the next active phase should run for.
     Again, only called at a specific timestep interval """
-    def determineNextActivePhaseDuration(self, steps):
+    def determineNextActivePhaseDuration(self):
         ns = self.nsCount
         ew = self.ewCount
         default_duration = 20
@@ -180,12 +180,18 @@ class Atlc:
             elif self.activePhase is 2 and ns == 0:
                 self.nextActivePhaseDuration = default_duration
 
+
+    def checkIfForceNeeded(self, steps):
+        # checking if we need to force a phase change
         # if the total running time so far plus the next phase duration is > 60
         if self.getActivePhaseTotalRunningTime() + self.getNextActivePhaseDuration() >= 60:
+
             # then limit the phase to 60 seconds
             self.nextActivePhaseDuration = 60 - self.getActivePhaseTotalRunningTime()
-            if self.getNextActivePhaseDuration() is 0:
-                self.setNextPhaseSettingTime(steps)
+
+            if self.getNextActivePhaseDuration() == 0:
+
+                self.nextPhaseSettingTime = steps
                 self.setNextActivePhaseDuration(20)
 
                 if self.getActivePhase() == 0:
@@ -197,6 +203,8 @@ class Atlc:
                     print("FORCING A PHASE CHANGE")
 
 
+
+
         self.resetVehicleCounts() # now reset the vehicle counts
         return self.nextActivePhaseDuration
 
@@ -205,13 +213,23 @@ class Atlc:
 
         # if the green phases are going to change
         if self.getActivePhase() != self.getNextActivePhase():
-            # 20 as default, plus 1 because of the nature of the checking of the time being at -1 step
+
+            # 20 as default
             # plus 5 because of the orange phase switch
             self.nextGreenPhaseDeterminationTime = steps + 20 + 5
+
+        # if the phase was forced to switch
+        elif self.getActivePhase() == self.getNextActivePhase() and self.getActivePhaseTotalRunningTime() >= 60:
+
+            # 20 as default
+            # plus 5 because of the orange phase switch
+            self.nextGreenPhaseDeterminationTime = steps + 20 + 5
+
         # otherwise if the phase is staying the same then just add on the extra time
         else:
-            # plus 1 due to same reason as above
+
             self.nextGreenPhaseDeterminationTime += self.getNextActivePhaseDuration()
+
         return self.nextGreenPhaseDeterminationTime
 
     def getNextGreenPhaseDeterminationTime(self):
@@ -230,7 +248,6 @@ class Atlc:
         if self.activePhase == 1 or self.activePhase == 3:
             self.nextPhaseSettingTime = steps + self.activePhaseDuration
 
-
     """ Change the phase to the next phase """
     def switchToNextActivePhase(self):
 
@@ -238,8 +255,9 @@ class Atlc:
         self.setActivePhaseDuration(self.nextActivePhaseDuration)
 
 
+
     """" Switch to the orange phase """
-    def switchToNextOrangePhase(self, steps):
+    def switchToNextOrangePhase(self):
 
         if self.activePhase == 0:
             self.activePhase = 1
@@ -247,7 +265,70 @@ class Atlc:
             self.activePhase = 3
 
         self.setActivePhaseDuration(5)
-        self.setNextPhaseSettingTime(steps)
+
+    """ set traffic lights """
+    def setTrafficLights(self):
+        state = self.phases[self.getActivePhase()]
+        traci.trafficlight.setRedYellowGreenState(self.id, state)
+
+
+    def checkPhaseDetermination(self, step):
+
+        if step == self.getNextGreenPhaseDeterminationTime() - 1:
+            print("######################")
+            print("DETERMINING NEXT PHASE")
+            self.showStatus(step)
+            print("----------------------")
+
+            self.determineNextActivePhase()
+            self.determineNextActivePhaseDuration()
+            self.checkIfForceNeeded(step)
+
+            if self.getActivePhase() == self.getNextActivePhase():
+
+                self.increaseActivePhaseDuration()
+                self.setNextGreenPhaseDeterminationTime(step)
+                self.nextPhaseSettingTime = None
+                print("1")
+            else:
+                self.nextPhaseSettingTime = step + 1
+                print("2")
+            self.showStatus(step)
+            print()
+
+    def checkPhaseSettingTime(self, step):
+        if step == self.getNextPhaseSettingTime():
+            print("@@@@@@@@@@@@@@@@@@@@@@@")
+            print("SWITCHING TO NEXT PHASE")
+            self.showStatus(step)
+            print("----------------------")
+
+            if self.getActivePhase() == 0:
+
+                print("SWITCHING TO ORANGE PHASE")
+                self.switchToNextOrangePhase()
+                self.resetActivePhaseTotalRunningTime()
+                self.setNextGreenPhaseDeterminationTime(step)  #
+                self.setNextPhaseSettingTime(step)
+
+            elif self.getActivePhase() == 2:
+
+                print("SWITCHING TO ORANGE PHASE")
+                self.switchToNextOrangePhase()
+                self.resetActivePhaseTotalRunningTime()
+                self.setNextGreenPhaseDeterminationTime(step)
+                self.setNextPhaseSettingTime(step)
+
+            else:
+
+                print("SWITCHING TO NEXT GREEN PHASE")
+                self.switchToNextActivePhase()
+                self.resetActivePhaseTotalRunningTime()
+                self.nextPhaseSettingTime = None
+
+
+            self.showStatus(step)
+            print()
 
     def showStatus(self, step):
 
