@@ -12,12 +12,11 @@ def check_env():
         sys.exit("please declare environment variable 'SUMO_HOME'")
 
 
-
 def run():
     check_env()
     # store location of sumo-gui (if you want to launch with the gui)
-    sumoBinary = "/usr/bin/sumo-gui"
-    sumoCmd = [sumoBinary,"-c", "osm.sumocfg"]
+    sumo_binary = "/usr/bin/sumo-gui"
+    sumo_cmd = [sumo_binary,"-c", "osm.sumocfg"]
     import traci
 
     # start simulation, connecting to it using this script
@@ -25,11 +24,11 @@ def run():
     # trafficLightData = open('trafficLightData.csv', 'w')
     # writer = csv.writer(trafficLightData)
 
-    traci.start(sumoCmd)
+    traci.start(sumo_cmd)
     step = 1
 
     traci.trafficlight.setProgram("354512", "dynamic")
-    #traci.trafficlight.setPhase("354512", 2)
+    # traci.trafficlight.setPhase("354512", 2)
     # create smart traffic light for dennehys cross junction
     dennehyscross = Atlc("354512", "induction_loops/e1.add.xml")
     dennehyscross.assignJunctionDetectors(2, 1, 2, 1)
@@ -47,11 +46,6 @@ def run():
         # update the vehicle counts for NS and EW directions
         ns = dennehyscross.detectNS()
         ew = dennehyscross.detectEW()
-        #print("Active Phase:", dennehyscross.getActivePhase())
-        #print("Active Phase Duration:", dennehyscross.getActivePhaseDuration())
-        #print("Next Active Phase:", dennehyscross.getNextActivePhase())
-        #print("Next Active Phase Duration:", dennehyscross.getNextActivePhaseDuration())
-        #print(dennehyscross.determineNextActivePhase())
 
         """ Is it time to determine what the next active phase should be? """
         if step == dennehyscross.getNextGreenPhaseDeterminationTime() - 1:
@@ -59,29 +53,52 @@ def run():
             print("DETERMINING NEXT PHASE")
             dennehyscross.showStatus(step)
             print("----------------------")
+
             dennehyscross.determineNextActivePhase()
             dennehyscross.determineNextActivePhaseDuration(step)
+
             if dennehyscross.getActivePhase() == dennehyscross.getNextActivePhase():
+
+                dennehyscross.increaseActivePhaseDuration()
                 dennehyscross.setNextGreenPhaseDeterminationTime(step)
-                dennehyscross.setNextPhaseSettingTime(step)
+                dennehyscross.nextPhaseSettingTime = None
                 print("1")
             else:
-                dennehyscross.increaseActivePhaseDuration(dennehyscross.getNextActivePhaseDuration())
-                dennehyscross.setNextGreenPhaseDeterminationTime(step)
+                dennehyscross.nextPhaseSettingTime = step + 1
                 print("2")
 
             dennehyscross.showStatus(step)
             print()
-        elif step == dennehyscross.getNextPhaseSettingTime():
-            print("######################")
+
+        if step == dennehyscross.getNextPhaseSettingTime():
+            print("@@@@@@@@@@@@@@@@@@@@@@@")
             print("SWITCHING TO NEXT PHASE")
             dennehyscross.showStatus(step)
             print("----------------------")
-            dennehyscross.switchToNextActivePhase()
-            dennehyscross.resetActivePhaseTotalRunningTime()
-            dennehyscross.setNextGreenPhaseDeterminationTime(step -1)
-            dennehyscross.showStatus(step)
 
+            if dennehyscross.getActivePhase() == 0:
+
+                print("SWITCHING TO ORANGE PHASE")
+                dennehyscross.switchToNextOrangePhase(step)
+                dennehyscross.resetActivePhaseTotalRunningTime()
+                dennehyscross.setNextGreenPhaseDeterminationTime(step + 5)
+
+            elif dennehyscross.getActivePhase() == 2:
+
+                print("SWITCHING TO ORANGE PHASE")
+                dennehyscross.switchToNextOrangePhase(step)
+                dennehyscross.resetActivePhaseTotalRunningTime()
+                dennehyscross.setNextGreenPhaseDeterminationTime(step + 5)
+
+            else:
+
+                print("SWITCHING TO NEXT GREEN PHASE")
+                dennehyscross.switchToNextActivePhase()
+                dennehyscross.setNextGreenPhaseDeterminationTime(step - 1)
+                dennehyscross.resetActivePhaseTotalRunningTime()
+                dennehyscross.nextPhaseSettingTime = None
+
+            dennehyscross.showStatus(step)
             print()
 
         # increment by 1 step
@@ -90,8 +107,10 @@ def run():
     # when finished all steps, close traci
     traci.close()
 
+
 def main():
     run()
+
 
 if __name__ == "__main__":
     main()
