@@ -44,64 +44,17 @@ def run():
         traci.simulationStep()
         dennehyscross.incrementActivePhaseTotalRunningTime()
         # update the vehicle counts for NS and EW directions
-        ns = dennehyscross.detectNS()
-        ew = dennehyscross.detectEW()
+        dennehyscross.detectNS()
+        dennehyscross.detectEW()
 
         """ Is it time to determine what the next active phase should be? """
-        if step == dennehyscross.getNextGreenPhaseDeterminationTime() - 1:
-            print("######################")
-            print("DETERMINING NEXT PHASE")
-            dennehyscross.showStatus(step)
-            print("----------------------")
+        dennehyscross.checkPhaseDetermination(step)
 
-            dennehyscross.determineNextActivePhase()
-            dennehyscross.determineNextActivePhaseDuration(step)
-
-            if dennehyscross.getActivePhase() == dennehyscross.getNextActivePhase():
-
-                dennehyscross.increaseActivePhaseDuration()
-                dennehyscross.setNextGreenPhaseDeterminationTime(step)
-                dennehyscross.nextPhaseSettingTime = None
-                print("1")
-            else:
-                dennehyscross.nextPhaseSettingTime = step + 1
-                print("2")
-
-            dennehyscross.showStatus(step)
-            print()
-
-        if step == dennehyscross.getNextPhaseSettingTime():
-            print("@@@@@@@@@@@@@@@@@@@@@@@")
-            print("SWITCHING TO NEXT PHASE")
-            dennehyscross.showStatus(step)
-            print("----------------------")
-
-            if dennehyscross.getActivePhase() == 0:
-
-                print("SWITCHING TO ORANGE PHASE")
-                dennehyscross.switchToNextOrangePhase(step)
-                dennehyscross.resetActivePhaseTotalRunningTime()
-                dennehyscross.setNextGreenPhaseDeterminationTime(step + 5)
-
-            elif dennehyscross.getActivePhase() == 2:
-
-                print("SWITCHING TO ORANGE PHASE")
-                dennehyscross.switchToNextOrangePhase(step)
-                dennehyscross.resetActivePhaseTotalRunningTime()
-                dennehyscross.setNextGreenPhaseDeterminationTime(step + 5)
-
-            else:
-
-                print("SWITCHING TO NEXT GREEN PHASE")
-                dennehyscross.switchToNextActivePhase()
-                dennehyscross.setNextGreenPhaseDeterminationTime(step - 1)
-                dennehyscross.resetActivePhaseTotalRunningTime()
-                dennehyscross.nextPhaseSettingTime = None
-
-            dennehyscross.showStatus(step)
-            print()
+        """ Is it time to switch to the next phase? """
+        dennehyscross.checkPhaseSettingTime(step)
 
         # increment by 1 step
+        dennehyscross.setTrafficLights()
         step += 1
 
     # when finished all steps, close traci
