@@ -206,7 +206,8 @@ class Atlc:
         # if the green phases are going to change
         if self.getActivePhase() != self.getNextActivePhase():
             # 20 as default, plus 1 because of the nature of the checking of the time being at -1 step
-            self.nextGreenPhaseDeterminationTime = steps + 20
+            # plus 5 because of the orange phase switch
+            self.nextGreenPhaseDeterminationTime = steps + 20 + 5
         # otherwise if the phase is staying the same then just add on the extra time
         else:
             # plus 1 due to same reason as above
@@ -226,12 +227,30 @@ class Atlc:
 
         self.nextPhaseSettingTime = steps + self.getNextActivePhaseDuration()
 
+        if self.activePhase == 1 or self.activePhase == 3:
+            self.nextPhaseSettingTime = steps + self.activePhaseDuration
+
+
     """ Change the phase to the next phase """
     def switchToNextActivePhase(self):
+
         self.activePhase = self.nextActivePhase
         self.setActivePhaseDuration(self.nextActivePhaseDuration)
 
+
+    """" Switch to the orange phase """
+    def switchToNextOrangePhase(self, steps):
+
+        if self.activePhase == 0:
+            self.activePhase = 1
+        else:
+            self.activePhase = 3
+
+        self.setActivePhaseDuration(5)
+        self.setNextPhaseSettingTime(steps)
+
     def showStatus(self, step):
+
         print("Current Step:", step)
         print("Current Phase:", self.getActivePhase())
         print("Current Phase Duration:", self.getActivePhaseDuration())
