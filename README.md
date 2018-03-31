@@ -13,10 +13,14 @@ microscopic traffic simulator to model the environment, implement the algorithms
 the analysis. Several performance measures such as average vehicle journey time and average
 vehicle waiting time are considered using the same flows of traffic over a given time period.
 
-Implementing the adaptive control in Python.
+# Milestones Met
+
+Implemented the intelligent traffic light algorithm as described in this paper: http://bit.ly/2DDMs59.
+
+Exported the traffic light phase states for the static, actuated and dynamic traffic light control algorithms and plotting them using plotly.
 
 # Currently
 
-Implementing the intelligent traffic light algorithm as described in this paper: http://bit.ly/2DDMs59
+Extracting vehicle information for each time step and graphing the results.
 
-
+Changing traffic flows to analyze how the different control algorithms manage.
