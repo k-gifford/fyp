@@ -142,7 +142,7 @@ class Atlc:
             if ns >= ew:
                 self.setNextActivePhase(2)
             elif ns < ew:
-                if self.getActivePhaseTotalRunningTime() >= 60:
+                if self.getActivePhaseTotalRunningTime() >= 80:
                     self.setNextActivePhase(2)
                 else:
                     self.setNextActivePhase(0)
@@ -151,7 +151,7 @@ class Atlc:
             if ew >= ns:
                 self.setNextActivePhase(0)
             elif ew < ns:
-                if self.getActivePhaseTotalRunningTime() >= 60:
+                if self.getActivePhaseTotalRunningTime() >= 80:
                     self.setNextActivePhase(0)
                 else:
                     self.setNextActivePhase(2)
@@ -187,7 +187,7 @@ class Atlc:
         if self.getActivePhaseTotalRunningTime() + self.getNextActivePhaseDuration() >= 60:
 
             # then limit the phase to 60 seconds
-            self.nextActivePhaseDuration = 60 - self.getActivePhaseTotalRunningTime()
+            self.nextActivePhaseDuration = 80 - self.getActivePhaseTotalRunningTime()
 
             if self.getNextActivePhaseDuration() == 0:
 
@@ -219,7 +219,7 @@ class Atlc:
             self.nextGreenPhaseDeterminationTime = steps + 20 + 5
 
         # if the phase was forced to switch
-        elif self.getActivePhase() == self.getNextActivePhase() and self.getActivePhaseTotalRunningTime() >= 60:
+        elif self.getActivePhase() == self.getNextActivePhase() and self.getActivePhaseTotalRunningTime() >= 80:
 
             # 20 as default
             # plus 5 because of the orange phase switch
