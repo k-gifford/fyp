@@ -19,7 +19,7 @@ class Atlc:
         self.nsLoops = []
         self.ewLoops = []
 
-        self.activePhase = 0  # simulation will start with EW direction green
+        self.activePhase = 2  # simulation will start with EW direction green
         self.activePhaseDuration = 30  # initial active phase runs for 30 seconds
         self.activePhaseTotalRunningTime = 0
 
