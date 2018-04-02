@@ -184,7 +184,7 @@ class Atlc:
     def checkIfForceNeeded(self, steps):
         # checking if we need to force a phase change
         # if the total running time so far plus the next phase duration is > 60
-        if self.getActivePhaseTotalRunningTime() + self.getNextActivePhaseDuration() >= 60:
+        if self.getActivePhaseTotalRunningTime() + self.getNextActivePhaseDuration() >= 80:
 
             # then limit the phase to 60 seconds
             self.nextActivePhaseDuration = 80 - self.getActivePhaseTotalRunningTime()
