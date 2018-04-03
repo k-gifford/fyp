@@ -253,9 +253,9 @@ def plotActuated():
 
 def main():
 
-    plotStatic()
+    # plotStatic()
     plotDynamic()
-    plotActuated()
+    # plotActuated()
 
 if __name__ == "__main__":
     main()
