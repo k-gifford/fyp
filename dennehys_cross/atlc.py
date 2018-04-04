@@ -79,6 +79,12 @@ class Atlc:
         self.nsCount = 0
         self.ewCount = 0
 
+    def reset_ns_vehicle_counts(self):
+        self.nsCount = 0
+
+    def reset_ew_vehicle_counts(self):
+        self.ewCount = 0
+
     def retreiveTrafficLogicPhases(self, location):
         tree = ET.parse(location)
         root = tree.getroot()
@@ -141,20 +147,26 @@ class Atlc:
         if self.getActivePhase() is 0:  # if the phase is currently EW
             if ns >= ew:
                 self.setNextActivePhase(2)
+                self.reset_ns_vehicle_counts()
             elif ns < ew:
-                if self.getActivePhaseTotalRunningTime() >= 80:
+                if self.getActivePhaseTotalRunningTime() >= 60:
                     self.setNextActivePhase(2)
+                    self.reset_ns_vehicle_counts()
                 else:
                     self.setNextActivePhase(0)
+                    self.reset_ew_vehicle_counts()
 
         elif self.getActivePhase() is 2:  # if the phase is currently NS
             if ew >= ns:
                 self.setNextActivePhase(0)
+                self.reset_ew_vehicle_counts()
             elif ew < ns:
-                if self.getActivePhaseTotalRunningTime() >= 80:
+                if self.getActivePhaseTotalRunningTime() >= 60:
                     self.setNextActivePhase(0)
+                    self.reset_ew_vehicle_counts()
                 else:
                     self.setNextActivePhase(2)
+                    self.reset_ns_vehicle_counts()
 
     """ Determing how long the next active phase should run for.
     Again, only called at a specific timestep interval """
@@ -184,10 +196,10 @@ class Atlc:
     def checkIfForceNeeded(self, steps):
         # checking if we need to force a phase change
         # if the total running time so far plus the next phase duration is > 60
-        if self.getActivePhaseTotalRunningTime() + self.getNextActivePhaseDuration() >= 80:
+        if self.getActivePhaseTotalRunningTime() + self.getNextActivePhaseDuration() >= 60:
 
             # then limit the phase to 60 seconds
-            self.nextActivePhaseDuration = 80 - self.getActivePhaseTotalRunningTime()
+            self.nextActivePhaseDuration = 60 - self.getActivePhaseTotalRunningTime()
 
             if self.getNextActivePhaseDuration() == 0:
 
@@ -204,8 +216,6 @@ class Atlc:
 
 
 
-
-        self.resetVehicleCounts() # now reset the vehicle counts
         return self.nextActivePhaseDuration
 
     """ Next green phase determination calculator """
@@ -219,7 +229,7 @@ class Atlc:
             self.nextGreenPhaseDeterminationTime = steps + 20 + 5
 
         # if the phase was forced to switch
-        elif self.getActivePhase() == self.getNextActivePhase() and self.getActivePhaseTotalRunningTime() >= 80:
+        elif self.getActivePhase() == self.getNextActivePhase() and self.getActivePhaseTotalRunningTime() >= 60:
 
             # 20 as default
             # plus 5 because of the orange phase switch
