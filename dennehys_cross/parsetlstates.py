@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import csv
 import xml.etree.ElementTree as ET
 
@@ -56,8 +57,9 @@ def parseActuatedTlStates():
     writer.writeheader()
     tree = ET.parse("tl_states.xml")
     root = tree.getroot()
+    state = 0
     for result in root:
-        state = 0
+
         if result.attrib['state'] == "GGggrrrrGGggrrrr":
             state = 1
         elif result.attrib['state'] == "yyggrrrryyggrrrr":
@@ -73,7 +75,9 @@ def parseActuatedTlStates():
         elif result.attrib['state'] == "rrrrrrGGrrrrrrGG":
             state = -1
         else:
-            state = -.5 # rryyrrrrrryyrrrr
+            state = -.5  # rryyrrrrrryyrrrr
+
+
 
         data = {'timestep': result.attrib['time'], 'state': state}
         writer.writerow(data)
@@ -81,9 +85,9 @@ def parseActuatedTlStates():
 
 def main():
 
-    # parseDynamicTlStates()
+    parseDynamicTlStates()
     # parseStaticTlStates()
-    parseActuatedTlStates()
+    # parseActuatedTlStates()
 
 if __name__ == "__main__":
 
