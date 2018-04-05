@@ -40,13 +40,7 @@ def plotDynamic():
     print(dynamic_tl_yellow_states)
 
     layout = graph_objs.Layout(
-        margin=dict(
-            l=50,
-            r=50,
-            b=100,
-            t=100,
-            pad=4
-        ),
+
         title='Dynamic Traffic Light States',
         xaxis=dict(
             title='Time (s)',
@@ -91,7 +85,7 @@ def plotDynamic():
     data = [ew_green_states, ns_green_states, orange_states]
     fig = graph_objs.Figure(data=data, layout=layout)
 
-    py.plot(fig, filename='dynamic-tafficlight-durations')
+    py.plot(fig, filename='dynamic-trafficlight-durations')
 
 
 def plotStatic():
@@ -166,7 +160,7 @@ def plotStatic():
     data = [ew_green_states, ns_green_states, orange_states]
     fig = graph_objs.Figure(data=data, layout=layout)
 
-    py.plot(fig, filename='static-tafficlight-durations')
+    py.plot(fig, filename='static-trafficlight-durations')
 
 
 def plotActuated():
@@ -200,13 +194,6 @@ def plotActuated():
     print(dynamic_tl_yellow_states)
 
     layout = graph_objs.Layout(
-        margin=dict(
-            l=50,
-            r=50,
-            b=100,
-            t=100,
-            pad=4
-        ),
         title='Actuated Traffic Light States',
         xaxis=dict(
             title='Time (s)',
@@ -248,13 +235,13 @@ def plotActuated():
     data = [ew_green_states, ns_green_states, orange_states]
     fig = graph_objs.Figure(data=data, layout=layout)
 
-    py.plot(fig, filename='actuated-tafficlight-durations')
+    py.plot(fig, filename='actuated-trafficlight-durations')
 
 
 def main():
 
     # plotStatic()
-    plotDynamic()
+    # plotDynamic()
     # plotActuated()
 
 if __name__ == "__main__":
