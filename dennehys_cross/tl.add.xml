@@ -3,13 +3,13 @@
 
     <tlLogic id="354512" type="actuated" programID="dynamic" offset="0">
       <!-- East West -->
-      <phase duration="20"  state="GGggrrrrGGggrrrr"/>
+      <phase duration="20"  state="GGgrrrGGgrrr"/>
       <!-- amber -->
-      <phase duration="5"   state="yyyyrrrryyyyrrrr"/>
+      <phase duration="5"   state="yyyrrryyyrrr"/>
       <!-- North South -->
-      <phase duration="20"  state="rrrrGGggrrrrGGgg"/>
+      <phase duration="20"  state="rrrGGgrrrGGg"/>
       <!-- amber -->
-      <phase duration="5"  state="rrrryyyyrrrryyyy"/>
+      <phase duration="5"  state="rrryyyrrryyy"/>
     </tlLogic>
 
 </additional>
