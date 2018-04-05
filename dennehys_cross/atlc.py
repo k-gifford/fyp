@@ -52,18 +52,19 @@ class Atlc:
     def assignJunctionDetectors(self, north, east, south, west):
         lane = 0
         for loop in self.e1_loops:
-            if (lane < north):
+            if lane < north:
                 self.nsLoops.append(loop)
-                lane += 1
-            elif(lane < (north+east)):
+
+            elif lane < (north + east):
                 self.ewLoops.append(loop)
-                lane += 1
-            elif(lane < (north + east + south)):
+
+            elif lane < (north + east + south):
                 self.nsLoops.append(loop)
-                lane += 1
+
             else:
                 self.ewLoops.append(loop)
-                lane += 1
+
+            lane += 1
 
     def detectNS(self):
         for loop in self.nsLoops:
