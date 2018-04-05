@@ -11,11 +11,11 @@ def parseDynamicTlStates():
     root = tree.getroot()
     for result in root:
         state = 0
-        if result.attrib['state'] == "GGggrrrrGGggrrrr":
+        if result.attrib['state'] == "GGgrrrGGgrrr":
             state = 1
-        elif result.attrib['state'] == "rrrrGGggrrrrGGgg":
+        elif result.attrib['state'] == "rrrGGgrrrGGg":
             state = -1
-        elif result.attrib['state'] == "yyyyrrrryyyyrrrr":
+        elif result.attrib['state'] == "yyyrrryyyrrr":
             state = .5
         else:
             state = -.5
@@ -31,22 +31,22 @@ def parseStaticTlStates():
     root = tree.getroot()
     for result in root:
         state = 0
-        if result.attrib['state'] == "GGggrrrrGGggrrrr":
+        if result.attrib['state'] == "GGgrrrGGgrrr":
             state = 1
-        elif result.attrib['state'] == "yyggrrrryyggrrrr":
+        elif result.attrib['state'] == "yygrrryygrrr":
             state = 1
-        elif result.attrib['state'] == "rrGGrrrrrrGGrrrr":
+        elif result.attrib['state'] == "rrGrrrrrGrrr":
             state = 1
-        elif result.attrib['state'] == "rryyrrrrrryyrrrr":
+        elif result.attrib['state'] == "rryrrrrryrrr":
             state = .5
-        elif result.attrib['state'] == "rrrrGGggrrrrGGgg":
+        elif result.attrib['state'] == "rrrGGgrrrGGg":
             state = -1
-        elif result.attrib['state'] == "rrrryyggrrrryygg":
+        elif result.attrib['state'] == "rrryygrrryyg":
             state = -1
-        elif result.attrib['state'] == "rrrrrrGGrrrrrrGG":
+        elif result.attrib['state'] == "rrrrrGrrrrrG":
             state = -1
         else:
-            state = -.5 # rryyrrrrrryyrrrr
+            state = -.5  # rryrrrrryrrr
 
         data = {'timestep': result.attrib['time'], 'state': state}
         writer.writerow(data)
@@ -60,22 +60,22 @@ def parseActuatedTlStates():
     state = 0
     for result in root:
 
-        if result.attrib['state'] == "GGggrrrrGGggrrrr":
+        if result.attrib['state'] == "GGgrrrGGgrrr":
             state = 1
-        elif result.attrib['state'] == "yyggrrrryyggrrrr":
+        elif result.attrib['state'] == "yygrrryygrrr":
             state = 1
-        elif result.attrib['state'] == "rrGGrrrrrrGGrrrr":
+        elif result.attrib['state'] == "rrGrrrrrGrrr":
             state = 1
-        elif result.attrib['state'] == "rryyrrrrrryyrrrr":
+        elif result.attrib['state'] == "rryrrrrryrrr":
             state = .5
-        elif result.attrib['state'] == "rrrrGGggrrrrGGgg":
+        elif result.attrib['state'] == "rrrGGgrrrGGg":
             state = -1
-        elif result.attrib['state'] == "rrrryyggrrrryygg":
+        elif result.attrib['state'] == "rrryygrrryyg":
             state = -1
-        elif result.attrib['state'] == "rrrrrrGGrrrrrrGG":
+        elif result.attrib['state'] == "rrrrrGrrrrrG":
             state = -1
         else:
-            state = -.5  # rryyrrrrrryyrrrr
+            state = -.5  # rryrrrrryrrr
 
 
 
@@ -85,8 +85,8 @@ def parseActuatedTlStates():
 
 def main():
 
-    parseDynamicTlStates()
-    # parseStaticTlStates()
+    # parseDynamicTlStates()
+    parseStaticTlStates()
     # parseActuatedTlStates()
 
 if __name__ == "__main__":
