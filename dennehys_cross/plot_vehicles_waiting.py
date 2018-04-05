@@ -2,19 +2,14 @@
 import plotly.plotly as py
 from plotly.graph_objs import *
 
-def plotTimes(north, south):
 
-    size = list(range(len(north)))
+def plot_vehicles(ns, ew):
+
+    size = list(range(len(ns)))
 
     layout = graph_objs.Layout(
-        margin=dict(
-            l=50,
-            r=50,
-            b=100,
-            t=100,
-            pad=4
-        ),
-        title='Vehicles Waiting',
+
+        title='Dynamic Vehicles Waiting',
         xaxis=dict(
             title='Time (s)',
             titlefont=dict(
@@ -30,27 +25,100 @@ def plotTimes(north, south):
                 family='Courier New, monospace',
                 size=18,
                 color='#7f7f7f'
-            )
+            ),
+            range=[0, 25]
 
+        ),
+        legend=dict(
+            traceorder='normal',
+            font=dict(
+                family='sans-serif',
+                size=16,
+                color='#000'
+            ),
+            bgcolor='#E2E2E2',
+            bordercolor='#FFFFFF',
+            borderwidth=2
         )
     )
 
     north_south_approach = Scatter(
         x=size,
-        y=north,
+        y=ns,
         marker=dict(color="green"),
         name="NS Approaches"
     )
     east_west_approach = Scatter(
         x=size,
-        y=south,
+        y=ew,
         marker=dict(color="orange"),
         name="EW Approaches"
     )
 
-
-
     data = [north_south_approach, east_west_approach]
     fig = graph_objs.Figure(data=data, layout=layout)
 
-    py.plot(fig, filename='actuated-num-vehicles-waiting')
+    py.plot(fig, filename='Dynamic-num-vehicles-waiting')
+
+def plot_all_tl_alg_vehicles(static, actuated, dynamic):
+    size = list(range(len(static)))
+
+    layout = graph_objs.Layout(
+
+        title='East/South Vehicles Waiting Over All Three Algorithms',
+        xaxis=dict(
+            title='Time (s)',
+            titlefont=dict(
+                family='Courier New, monospace',
+                size=18,
+                color='#7f7f7f'
+            )
+
+        ),
+        yaxis=dict(
+            title='Num Vehicles',
+            titlefont=dict(
+                family='Courier New, monospace',
+                size=18,
+                color='#7f7f7f'
+            ),
+            range=[0, 80]
+
+        ),
+        legend=dict(
+            traceorder='normal',
+            font=dict(
+                family='sans-serif',
+                size=16,
+                color='#000'
+            ),
+            bgcolor='#E2E2E2',
+            bordercolor='#FFFFFF',
+            borderwidth=2
+        )
+    )
+
+    static = Scatter(
+        x=size,
+        y=static,
+        marker=dict(color="green"),
+        name="Static"
+    )
+    actuated = Scatter(
+        x=size,
+        y=actuated,
+        marker=dict(color="blue"),
+        name="Actuated"
+    )
+    dynamic = Scatter(
+        x=size,
+        y=dynamic,
+        marker=dict(color="red"),
+        name="Dynamic"
+    )
+
+    data = [static, actuated, dynamic]
+    fig = graph_objs.Figure(data=data, layout=layout)
+
+    py.plot(fig, filename='east-west-all-num-vehicles-waiting')
+
