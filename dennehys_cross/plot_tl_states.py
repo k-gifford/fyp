@@ -9,7 +9,7 @@ from plotly.graph_objs import *
 import csv
 
 
-def plotDynamic():
+def plot_dynamic():
 
     dynamicfile = "dynamictlstates.csv"
     dynamic_timesteps = []
@@ -88,7 +88,7 @@ def plotDynamic():
     py.plot(fig, filename='dynamic-trafficlight-durations')
 
 
-def plotStatic():
+def plot_static():
 
     staticfile = "statictlstates.csv"
     static_timesteps = []
@@ -163,7 +163,7 @@ def plotStatic():
     py.plot(fig, filename='static-trafficlight-durations')
 
 
-def plotActuated():
+def plot_actuated():
 
     staticfile = "actuatedtlstates.csv"
     dynamic_timesteps = []
@@ -240,9 +240,9 @@ def plotActuated():
 
 def main():
 
-    # plotStatic()
-    # plotDynamic()
-    # plotActuated()
+    plot_static()
+    plot_actuated()
+    plot_dynamic()
 
 if __name__ == "__main__":
     main()
