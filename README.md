@@ -15,12 +15,16 @@ vehicle waiting time are considered using the same flows of traffic over a given
 
 # Milestones Met
 
-Implemented the intelligent traffic light algorithm as described in this paper: http://bit.ly/2DDMs59.
+Implemented the intelligent traffic light algorithm in Python, as described in this paper: http://bit.ly/2DDMs59.
 
 Exported the traffic light phase states for the static, actuated and dynamic traffic light control algorithms and plotting them using plotly.
 
+Extracted:
+  - average vehicle waiting times and graphing the results.
+  - average vehicle trip durations and graphing the results.
+  - each vehicle considered waiting for every second in a 30 minute period and graphed the result for all three algorithms.
+
 # Currently
 
-Extracting vehicle information for each time step and graphing the results.
+Testing multiple hypotheses and recording their effects on the average waiting times, average journey times, etc.
 
-Changing traffic flows to analyze how the different control algorithms manage.
