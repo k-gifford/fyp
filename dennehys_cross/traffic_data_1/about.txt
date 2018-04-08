@@ -1,0 +1,3 @@
+Initial simulation environment. 
+High flow from EW and low from NS directions.
+

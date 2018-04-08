@@ -1,0 +1,10 @@
+Average Vehicle Journey Times
+S - 173.56550580431178
+A - 99.79
+D - 90.34962962962963
+
+Average Vehicle Waiting Times
+S - 75.42620232172472
+A - 16.80
+D - 9.394074074074075
+
