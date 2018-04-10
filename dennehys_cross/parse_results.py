@@ -15,11 +15,35 @@ def parse_static_trip_info():
     writer.writeheader()
     tree = ET.parse("static.trip.infos.xml")
     root = tree.getroot()
+    duration = 0
+    waiting = 0
+    count = 0
+    min_dur = 0
+    max_dur = 0
+    min_wait = 0
+    max_wait = 0
     for result in root:
         data = {'vehicleId': result.attrib['id'],
                 'tripDuration': result.attrib['duration'],
                 'totalWaitingTime': result.attrib['waitSteps']}
         writer.writerow(data)
+        duration += data['duration']
+        waiting += data['waitSteps']
+        count += 1
+        if data['duration'] < min_dur:
+            min_dur = data['duration']
+        elif data['duration'] > max_dur:
+            max_dur = data['duration']
+        if data['waitSteps'] < min_wait:
+            min_wait = data['waitSteps']
+        elif data['waitSteps'] > max_wait:
+            max_wait = data['waitSteps']
+
+    avg_dur = duration/count
+    avg_wait = waiting/count
+
+    print("Static [Avg Dur:", avg_dur, ", Min:", min_dur, ", Max:", max_dur)
+    print("Static [Avg Wait:", avg_wait, ", Min:", min_wait, ", Max:", max_wait)
 
 
 def parse_actuated_trip_info():
@@ -28,11 +52,35 @@ def parse_actuated_trip_info():
     writer.writeheader()
     tree = ET.parse("actuated.trip.infos.xml")
     root = tree.getroot()
+    duration = 0
+    waiting = 0
+    count = 0
+    min_dur = 0
+    max_dur = 0
+    min_wait = 0
+    max_wait = 0
     for result in root:
         data = {'vehicleId': result.attrib['id'],
                 'tripDuration': result.attrib['duration'],
                 'totalWaitingTime': result.attrib['waitSteps']}
         writer.writerow(data)
+        duration += data['duration']
+        waiting += data['waitSteps']
+        count += 1
+        if data['duration'] < min_dur:
+            min_dur = data['duration']
+        elif data['duration'] > max_dur:
+            max_dur = data['duration']
+        if data['waitSteps'] < min_wait:
+            min_wait = data['waitSteps']
+        elif data['waitSteps'] > max_wait:
+            max_wait = data['waitSteps']
+
+    avg_dur = duration / count
+    avg_wait = waiting / count
+
+    print("Actuated Avg Dur:", avg_dur, ", Min:", min_dur, ", Max:", max_dur)
+    print("Actuated Avg Wait:", avg_wait, ", Min:", min_wait, ", Max:", max_wait)
 
 
 def parse_dynamic_trip_info():
@@ -41,12 +89,34 @@ def parse_dynamic_trip_info():
     writer.writeheader()
     tree = ET.parse("dynamic.trip.infos.xml")
     root = tree.getroot()
+    duration = 0
+    waiting = 0
+    count = 0
+    min_dur = 0
+    max_dur = 0
+    min_wait = 0
+    max_wait = 0
     for result in root:
         data = {'vehicleId': result.attrib['id'],
                 'tripDuration': result.attrib['duration'],
                 'totalWaitingTime': result.attrib['waitSteps']}
-        writer.writerow(data)
+        writer.writerow(data)duration += data['duration']
+        waiting += data['waitSteps']
+        count += 1
+        if data['duration'] < min_dur:
+            min_dur = data['duration']
+        elif data['duration'] > max_dur:
+            max_dur = data['duration']
+        if data['waitSteps'] < min_wait:
+            min_wait = data['waitSteps']
+        elif data['waitSteps'] > max_wait:
+            max_wait = data['waitSteps']
 
+    avg_dur = duration/count
+    avg_wait = waiting/count
+
+    print("Dynamic Avg Dur:", avg_dur, ", Min:", min_dur, ", Max:", max_dur)
+    print("Dynamic Avg Wait:", avg_wait, ", Min:", min_wait, ", Max:", max_wait)
 
 def plot_trip_infos_waiting_time():
     fields = ['vehicleId', 'tripDuration', 'totalWaitingTime']
@@ -596,29 +666,29 @@ def parse_plot_ew_waiting_vehicles():
 
 
 def main():
-        
-    parse_dynamic_tl_states()
-    parse_static_tl_states()
-    parse_actuated_tl_states()
 
-    plot_static()
-    plot_actuated()
-    plot_dynamic()
+    # parse_dynamic_tl_states()
+    # parse_static_tl_states()
+    # parse_actuated_tl_states()
+    #
+    # plot_static()
+    # plot_actuated()
+    # plot_dynamic()
 
     parse_static_trip_info()
     parse_actuated_trip_info()
     parse_dynamic_trip_info()
 
-    plot_trip_infos_waiting_time()
-    plot_trip_infos_journey_durations()
+    # plot_trip_infos_waiting_time()
+    # plot_trip_infos_journey_durations()
 
-    parse_static_plot_waiting_vehicles()
-    parse_actuated_plot_waiting_vehicles()
-    parse_dynamic_plot_waiting_vehicles()
-
-    parse_plot_all_waiting_vehicles()
-    parse_plot_ns_waiting_vehicles()
-    parse_plot_ew_waiting_vehicles()
+    # parse_static_plot_waiting_vehicles()
+    # parse_actuated_plot_waiting_vehicles()
+    # parse_dynamic_plot_waiting_vehicles()
+    #
+    # parse_plot_all_waiting_vehicles()
+    # parse_plot_ns_waiting_vehicles()
+    # parse_plot_ew_waiting_vehicles()
 
 
 if __name__ == "__main__":
