@@ -18,17 +18,33 @@ def parse_static_trip_info():
     duration = 0
     waiting = 0
     count = 0
+    min_dur = 2000
+    max_dur = 0
+    min_wait = 2000
+    max_wait = 0
     for result in root:
         data = {'vehicleId': result.attrib['id'],
-                'tripDuration': result.attrib['duration'],
-                'totalWaitingTime': result.attrib['waitSteps']}
+                'tripDuration': float(result.attrib['duration']),
+                'totalWaitingTime': float(result.attrib['waitSteps'])}
         writer.writerow(data)
-        duration += float(data['tripDuration'])
-        waiting += float(data['totalWaitingTime'])
+        duration += data['tripDuration']
+        waiting += data['totalWaitingTime']
+
         count += 1
+        if data['tripDuration'] < min_dur:
+            min_dur = data['tripDuration']
+        elif data['tripDuration'] > max_dur:
+            max_dur = data['tripDuration']
+        if data['totalWaitingTime'] < min_wait:
+            min_wait = data['totalWaitingTime']
+        elif data['totalWaitingTime'] > max_wait:
+            max_wait = data['totalWaitingTime']
+
     avg_dur = duration/count
     avg_wait = waiting/count
-    print("Static [Avg Dur:", avg_dur, ", Avg Wait:", avg_wait)
+
+    print("Static Dur Avg:", avg_dur, ", Min:", min_dur, ", Max:", max_dur)
+    print("Static Wait Avg:", avg_wait, ", Min:", min_wait, ", Max:", max_wait)
 
 
 def parse_actuated_trip_info():
@@ -40,17 +56,32 @@ def parse_actuated_trip_info():
     duration = 0
     waiting = 0
     count = 0
+    min_dur = 2000
+    max_dur = 0
+    min_wait = 2000
+    max_wait = 0
     for result in root:
         data = {'vehicleId': result.attrib['id'],
-                'tripDuration': result.attrib['duration'],
-                'totalWaitingTime': result.attrib['waitSteps']}
+                'tripDuration': float(result.attrib['duration']),
+                'totalWaitingTime': float(result.attrib['waitSteps'])}
         writer.writerow(data)
-        duration += float(data['tripDuration'])
-        waiting += float(data['totalWaitingTime'])
+        duration += data['tripDuration']
+        waiting += data['totalWaitingTime']
         count += 1
+        if data['tripDuration'] < min_dur:
+            min_dur = data['tripDuration']
+        elif data['tripDuration'] > max_dur:
+            max_dur = data['tripDuration']
+        if data['totalWaitingTime'] < min_wait:
+            min_wait = data['totalWaitingTime']
+        elif data['totalWaitingTime'] > max_wait:
+            max_wait = data['totalWaitingTime']
+
     avg_dur = duration / count
     avg_wait = waiting / count
-    print("Actuated [Avg Dur:", avg_dur, ", Avg Wait:", avg_wait)
+
+    print("Actuated Dur Avg:", avg_dur, ", Min:", min_dur, ", Max:", max_dur)
+    print("Actuated Wait Avg:", avg_wait, ", Min:", min_wait, ", Max:", max_wait)
 
 
 def parse_dynamic_trip_info():
@@ -62,17 +93,33 @@ def parse_dynamic_trip_info():
     duration = 0
     waiting = 0
     count = 0
+    min_dur = 2000
+    max_dur = 0
+    min_wait = 2000
+    max_wait = 0
     for result in root:
         data = {'vehicleId': result.attrib['id'],
-                'tripDuration': result.attrib['duration'],
-                'totalWaitingTime': result.attrib['waitSteps']}
+                'tripDuration': float(result.attrib['duration']),
+                'totalWaitingTime': float(result.attrib['waitSteps'])}
         writer.writerow(data)
-        duration += float(data['tripDuration'])
-        waiting += float(data['totalWaitingTime'])
+        duration += data['tripDuration']
+        waiting += data['totalWaitingTime']
         count += 1
-    avg_dur = duration / count
-    avg_wait = waiting / count
-    print("Dynamic [Avg Dur:", avg_dur, ", Avg Wait:", avg_wait)
+        if data['tripDuration'] < min_dur:
+            min_dur = data['tripDuration']
+        elif data['tripDuration'] > max_dur:
+            max_dur = data['tripDuration']
+        if data['totalWaitingTime'] < min_wait:
+            min_wait = data['totalWaitingTime']
+        elif data['totalWaitingTime'] > max_wait:
+            max_wait = data['totalWaitingTime']
+
+    avg_dur = duration/count
+    avg_wait = waiting/count
+
+    print("Dynamic Dur Avg:", avg_dur, ", Min:", min_dur, ", Max:", max_dur)
+    print("Dynamic Wait Avg:", avg_wait, ", Min:", min_wait, ", Max:", max_wait)
+
 
 def plot_trip_infos_waiting_time():
     fields = ['vehicleId', 'tripDuration', 'totalWaitingTime']
@@ -80,36 +127,61 @@ def plot_trip_infos_waiting_time():
     csv_file = open('static.trip.infos.csv', 'r')
     reader = csv.DictReader(csv_file, fieldnames=fields)
     static = 0
+    static_min_wait = 2000
+    static_max_wait = 0
     next(reader, None)  # skip the headers
     for row in reader:
         value = float(row['totalWaitingTime'])
         static += value
         num_static_vehicles += 1
+        if value < static_min_wait:
+            static_min_wait = value
+        elif value > static_max_wait:
+            static_max_wait = value
 
     num_actuated_vehicles = 0
     csv_file = open('actuated.trip.infos.csv', 'r')
     reader = csv.DictReader(csv_file, fieldnames=fields)
     actuated = 0
+    actuated_min_wait = 2000
+    actuated_max_wait = 0
     next(reader, None)  # skip the headers
     for row in reader:
         value = float(row['totalWaitingTime'])
         actuated += value
         num_actuated_vehicles += 1
+        if value < actuated_min_wait:
+            actuated_min_wait = value
+        elif value > actuated_max_wait:
+            actuated_max_wait = value
 
     num_dynamic_vehicles = 0
     csv_file = open('dynamic.trip.infos.csv', 'r')
     reader = csv.DictReader(csv_file, fieldnames=fields)
     dynamic = 0
+    dynamic_min_wait = 2000
+    dynamic_max_wait = 0
     next(reader, None)  # skip the headers
     for row in reader:
         value = float(row['totalWaitingTime'])
         dynamic += value
         num_dynamic_vehicles += 1
+        if value < dynamic_min_wait:
+            dynamic_min_wait = value
+        elif value > dynamic_max_wait:
+            dynamic_max_wait = value
 
     # dividing to get average
     static = static / num_static_vehicles
     actuated = actuated / num_actuated_vehicles
     dynamic = dynamic / num_dynamic_vehicles
+
+    if static_min_wait == 0:
+        static_min_wait = static
+    if actuated_min_wait == 0:
+        actuated_min_wait = actuated
+    if dynamic_min_wait == 0:
+        dynamic_min_wait = dynamic
 
     layout = graph_objs.Layout(
         title='Average Vehicle Waiting Times',
@@ -145,17 +217,35 @@ def plot_trip_infos_waiting_time():
     static = Bar(
         y=static,
         marker=dict(color="green"),
-        name="Static Average Waiting Times"
+        name="Static Average Waiting Times",
+        error_y=dict(
+            type='data',
+            symmetric=False,
+            array=[static_max_wait - static],
+            arrayminus=[static_min_wait]
+        )
     )
     actuated = Bar(
         y=actuated,
         marker=dict(color="blue"),
-        name="Actuated Average Waiting Times"
+        name="Actuated Average Waiting Times",
+        error_y=dict(
+            type='data',
+            symmetric=False,
+            array=[actuated_max_wait - actuated],
+            arrayminus=[actuated_min_wait]
+        )
     )
     dynamic = Bar(
         y=dynamic,
         marker=dict(color="red"),
-        name="Dynamic Average Waiting Times"
+        name="Dynamic Average Waiting Times",
+        error_y=dict(
+            type='data',
+            symmetric=False,
+            array=[dynamic_max_wait - dynamic],
+            arrayminus=[dynamic_min_wait]
+        )
     )
 
     data = [static, actuated, dynamic]
@@ -170,31 +260,49 @@ def plot_trip_infos_journey_durations():
     csv_file = open('static.trip.infos.csv', 'r')
     reader = csv.DictReader(csv_file, fieldnames=fields)
     static = 0
+    static_min_wait = 2000
+    static_max_wait = 0
     next(reader, None)  # skip the headers
     for row in reader:
         value = float(row['tripDuration'])
         static += value
         num_static_vehicles += 1
+        if value < static_min_wait:
+            static_min_wait = value
+        elif value > static_max_wait:
+            static_max_wait = value
 
     num_actuated_vehicles = 0
     csv_file = open('actuated.trip.infos.csv', 'r')
     reader = csv.DictReader(csv_file, fieldnames=fields)
     actuated = 0
+    actuated_min_wait = 2000
+    actuated_max_wait = 0
     next(reader, None)  # skip the headers
     for row in reader:
         value = float(row['tripDuration'])
         actuated += value
         num_actuated_vehicles += 1
+        if value < actuated_min_wait:
+            actuated_min_wait = value
+        elif value > actuated_max_wait:
+            actuated_max_wait = value
 
     num_dynamic_vehicles = 0
     csv_file = open('dynamic.trip.infos.csv', 'r')
     reader = csv.DictReader(csv_file, fieldnames=fields)
     dynamic = 0
+    dynamic_min_wait = 2000
+    dynamic_max_wait = 0
     next(reader, None)  # skip the headers
     for row in reader:
         value = float(row['tripDuration'])
         dynamic += value
         num_dynamic_vehicles += 1
+        if value < dynamic_min_wait:
+            dynamic_min_wait = value
+        elif value > dynamic_max_wait:
+            dynamic_max_wait = value
 
     # dividing to get average
     static = static / num_static_vehicles
@@ -235,17 +343,35 @@ def plot_trip_infos_journey_durations():
     static = Bar(
         y=static,
         marker=dict(color="green"),
-        name="Static Average Journey Time"
+        name="Static Average Journey Time",
+        error_y=dict(
+            type='data',
+            symmetric=False,
+            array=[static_max_wait - static],
+            arrayminus=[static - static_min_wait]
+        )
     )
     actuated = Bar(
         y=actuated,
         marker=dict(color="blue"),
-        name="Actuated Average Journey Time"
+        name="Actuated Average Journey Time",
+        error_y=dict(
+            type='data',
+            symmetric=False,
+            array=[actuated_max_wait - actuated],
+            arrayminus=[actuated - actuated_min_wait]
+        )
     )
     dynamic = Bar(
         y=dynamic,
         marker=dict(color="red"),
-        name="Dynamic Average Journey Time"
+        name="Dynamic Opt Average Journey Time",
+        error_y=dict(
+            type='data',
+            symmetric=False,
+            array=[dynamic_max_wait - dynamic],
+            arrayminus=[dynamic - dynamic_min_wait]
+        )
     )
 
     data = [static, actuated, dynamic]
@@ -635,8 +761,8 @@ def main():
     parse_actuated_trip_info()
     parse_dynamic_trip_info()
 
-    # plot_trip_infos_waiting_time()
-    # plot_trip_infos_journey_durations()
+    plot_trip_infos_waiting_time()
+    plot_trip_infos_journey_durations()
 
     # parse_static_plot_waiting_vehicles()
     # parse_actuated_plot_waiting_vehicles()
