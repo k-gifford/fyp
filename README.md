@@ -13,18 +13,8 @@ microscopic traffic simulator to model the environment, implement the algorithms
 the analysis. Several performance measures such as average vehicle journey time and average
 vehicle waiting time are considered using the same flows of traffic over a given time period.
 
-# Milestones Met
+# Grade Achieved
+High 2H1 
 
-Implemented the intelligent traffic light algorithm in Python, as described in this paper: http://bit.ly/2DDMs59.
-
-Exported the traffic light phase states for the static, actuated and dynamic traffic light control algorithms and plotting them using plotly.
-
-Extracted:
-  - average vehicle waiting times and graphing the results.
-  - average vehicle trip durations and graphing the results.
-  - each vehicle considered waiting for every second in a 30 minute period and graphed the result for all three algorithms.
-
-# Currently
-
-Testing multiple hypotheses and recording their effects on the average waiting times, average journey times, etc.
-
+# View Report 
+Final year project report (graded material) is available for your viewing, saved as REPORT.pdf
